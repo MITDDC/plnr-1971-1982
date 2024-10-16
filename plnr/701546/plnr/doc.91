@@ -1,0 +1,295 @@
+.COMMENT NEW DOCUMENTATION ON MICRO PLANNER PRIMITIVES
+
+.HEADER PLNR PRIMITIVES 
+.PL 50
+.PSIZE 60
+.PAPERW 68
+.LINE 68
+III. The Micro Planner Primitives
+.SP 2
+*) UPDATE TO THFLUSH
+	(THFLUSH) = (THFLUSH THASSERTION THANTE THCONSE THERASING)
+.sp 2
+*) (THRESTRICT <variable> <lisp function 1> <lisp function 2> ...)
+	THRESTRICT allows one to restrict a PLANNER variable so that
+it will only match objects which satisfy the LISP functions named in
+the THRESTRICT statement.  For example, consider
+	(THGOAL (AGE MOTHER ($R $?X NUMBERP)))
+.br
+$R is an abbreviation, which expands to THRESTRICT. In this example,
+$?X will only match numbers.  Naturally, the function named must be
+a function of one variable.  Of course, we could have a lambda
+expression instead of the function name, as in
+.BR
+(THGOAL ($?Y IS A ($R ? (LAMBDA (X) (MEMQ X '(DOG CAT HACKER))))))
+.BR
+Also note that rather than a variable, we have a question mark
+inside the $R expression.  The net result is that the "?" will only
+match DOG, CAT, or HACKER.  However, it dosen't get assigned a value
+as $?X would in our first example.  We can also have
+	($R $_z MYPRED) 
+.br
+which has the expected result.  
+		In all our examples so far the restriction has been
+declared in our goal statement.  We can also crate the restriction
+when we declare variables at the begining of a theorem, or a THPROG,
+as in
+	(THPROG (A ($R B HUMANP)C)
+		(THGOAL ($?A SON OF $?B) $T))
+		...) 
+.br
+In this THPROG's variable bindings we use B
+rather than $?B or $_B.  (The prefix would have no meaning in the
+context of a variable list.) It is also possible to use THRESTRICT
+as a free standing function, so this last THPROG could have been
+written 
+	(THPROG (A B C) 
+		(THRESTRICT B HUMANP)
+		(THGOAL ($?A SON OF $B)$T)
+		...)
+.br
+	Once we restrict a variable it stays restricted until it
+goes away when the function who bound it is left. As we shall see,
+this has some interesting consequences. 
+	At the moment THGOAL is the only function which takes note
+of restrictions. So one can THSETQ a restricted variable to a value
+which would not satisfy it's restrictions.  The same goes for
+THAMONG.
+	It is possible to have
+	(THPROG (A ($R B ORANGEP) C)
+
+
+		(THGOAL (OWN $?A ($R $?B CIRCULARP)))
+		...)
+.br
+which will act the same as
+	(THPROG (A ($R B ORANGEP CIRCULARP) C)
+		(THGOAL (OWN $?A $?B))
+		...)
+.br
+Another interesting case is
+	(THGOAL (OWN JACK ($R $?B CIRCULARP)) (THUSE WHOHAS))
+.br
+where WHOHAS looks like 
+	(THCONSE (F G)
+		(OWN $?F $?G)
+		(THGOAL (HOLD $?F ($R $?G SMALLP))$T))
+.br
+When we do this last THGOAL, the item which matches $?G must satisfy
+both CIRCULARP and SMALLP.  It is possible that his goal will call
+another theorem which satisfies the goal without assigning $?G a
+value.  If this is the case then our first goal (OWN JACK...) will
+be satisfied without B getting a value, but, the restriction SMALLP
+will stay with $?B, just as an assigned value would have.  Hence it
+is possible for a theorem not to assign a value to a variable, but
+merely restrict its range of possibilities.
+.SP 2
+*) (THDUMP <filename1> <filename2> <device> <user>)
+	Dumps the state of the Micro-Planner world (THSTATE) into
+the specified file.
+	(THDUMP SAVE STATE) (THFLUSH) (UREAD) (IOC Q)
+.BR
+is a no op.
+.sp 2
+*) (THSTATE <indicator1> <indicator2> ... )
+	Prints that part of the state of the Micro-Planner world
+specified by the indicators.
+	(THSTATE THASSERTION) = assertions in data base 
+	(THSTATE THCONSE) = consequent theorems currently asserted
+	(THSTATE THANTE) = antecedent theorems currently asserted
+	(THSTATE THERASING) = erasing theorems currently asserted
+.sp 2
+*) (THNOHASH <ATOM> <INDICATOR1> <INDICATOR2>... )
+	The patterns of micro-planner theorems and assertions are
+stored in buckets hung on the atoms appearing in the patterns.
+Atoms which are very common are not very useful for this purpose.
+For example, suppose we wished to assert the following five
+patterns:
+.SP
+	A1: (JOHN IS A BOY)
+	A2: (JACK IS A BOY)
+	A3: (MARY IS A GIRL)
+	A4: (JILL IS A GIRL)
+	A5: (WOOF IS A DOG)
+
+
+.SP
+"IS" and "A" are not helpful in distinguishing any of these
+assertions from the others.  It would save space as well as
+computation to tell planner this.  Executing
+	(THNOHASH IS THASSERTION)
+	(THNOHASH A  THASSERTION)
+.BR
+accomplishes this purpose.
+.SP
+	One can be selective in telling planner where a particular
+atom is not useful for pattern matching purposes.  This is done by
+specifying which of the four following types of patterns the atom is
+not useful in indexing: 
+	the patterns of 
+		consequent theorems
+		antecedent theorems
+		erasing theorems
+		assertions.
+.br
+The syntax for this is to use any combination of the four following
+indicators:
+	THCONSE, THANTE, THERASING, THASSERTION 
+.SP
+	For example, (THNOHASH IS THASSERTION) informs planner not
+to use the atom "IS" as a handle on the pattern matching of
+assertions in which it is found.  It is still used for pattern
+matching purposes when it occurs in the patterns of theorems.
+.SP
+	(THNOHASH <atom> THCONSE THANTE THERASING THASSERTION) can
+be abbreviated as (THNOHASH <atom>) and is used when the atom that
+it is completely useless for pattern matching purposes. 
+.SP 2
+*) THGOAL - (addition)
+	Normally, THGOAL does not evaluate its arguments.  However,
+there are two exceptions to this.  First of all, $E can be used to
+tell planner to thvaluate any expression.  For example, 
+	(THSETQ $?X '(HUMAN TURING))
+	(THGOAL $E$?X ) 
+.BR
+will result in the pattern of the THGOAL statement being '(HUMAN
+TURING).  And secondly, in the special case where the pattern of the
+THGOAL statement is to be the value of a planner variable as in the
+the above example, $E is optional.  Thus,
+	(THGOAL $?X) = (THGOAL $E$?X)
+.SP
+*) (THMATCH <exp1> <exp2>)
+	THMATCH matches the lisp value of its first argument against
+the lisp value of its second argument.  For example,
+	(THMATCH '(HUMAN TURING) '($_X $_Y))
+.BR
+would succeed and result in $_X being bound to 'HUMAN and $_Y being
+bound to 'TURING.  if $_X were instead $?X, then THMATCH would
+succeed with $?X bound to 'HUMAN, providing $?X were previously
+
+
+either THUNASSIGNED or bound to $?X.
+	Failing back through a THMATCH is similar to failing back
+through a THGOAL.  Any variable assignments made by the match are
+undone and the variables are returned to their previous values. 
+	Note that THMATCH will not work properly if its inputs are
+themselves planner functions since planner is not corecursive with
+lisp.  For example, if HUMAN TURING is already asserted, the planner
+value of
+	(THGOAL (HuMAN TURING)) 
+.BR
+is ((HUMAN TURING)) but its lisp value is NIL.  Hence,
+	((THMATCH (THGOAL (H T)) '(HUMAN TURING)
+.BR
+will not work properly.  An explicit call to THVAL, however, will
+work:   
+	(THMATCH 
+		(THVAL '(THGOAL (HUMAN TURING)) NIL) 
+		'((HUMAN TURING)))
+.SP
+*) (THUNIQUE <exp1> <exp2> ...) 
+	THUNIQUE is a state filter.  It causes failure if the list
+consisting of the values of its arguments has ever been computed by
+any previously executed THUNIQUE.  For example, a consequent theorem
+named THM1 can be prevented from being entered twice with the same
+input by making 
+	(THUNIQUE 'THM1 $?X1 $?X2 ... ) 
+.BR
+the first statement of the theorem's body, where $?X1, $?X2, ... are
+the planner variables occurring in the theorem's pattern.
+.SP
+*) (THFAIL? <predicate> <action>)
+	If failure backs up to this planner primitive and its
+predicate evals to true, it returns the eval of its action.  THFAIL?
+is useful as a computationally less costly form of THMESSAGE since
+it does not involve pattern matching against a message failure or
+thproging.
+.SP
+*) (THERT <comment>)
+	THERT causes Micro-Planner to break and print its comment.
+The state of the world can be explored by evaling any s-expression.
+Planner expressions can be thvaled by explicitly calling thval.  For
+example,
+	(THVAL (THASSERT HUMAN TURING)  NIL)
+.BR
+would add this assertion to the data base if it had not been
+previously asserted.  Note that explicit thvals should be done
+carefully as they can change the state of the world.
+	When ready to leave the breakpoint,   ($P <s-exp>) causes
+THERT to return the lisp value of the s-exp, WHERE "$" = ALT-MODE.
+Note that this will cause failure if the expression evals to NIL. $P
+is equivalent to ($P T) and is the standard way to proceed from the
+breakpoint.
+.SP
+*) (THBKPT <comment>)
+	THBKPT has no effect unless traced. If it is, its comment is
+
+
+printed.  If the trace's break predicate is true as well, e. g. 
+	(THTRACE (THBKPT T T)), 
+.BR
+then THBKPT is breaks in a similar fashion to THERT. (see ***).
+However, THBKPT is more powerful than THERT as it also breaks upon
+failure backing up to it.  It is thus more useful than thert to
+debug planner programs. 
+.SP
+*) (THCONSE <thm-name> <list-of-variables> <pattern> <body>)
+	A planner consequent theorem can be defined and asserted by
+the function THCONSE.  For example,  a consequent theorem named THM1
+can be defined and asserted as follows: 
+.SP
+	(THCONSE THM1 (X) (FALLIBLE $?X) (THGOAL (HUMAN $?X)))
+.SP
+This is equivalent to:  
+.SP
+	(THPUTPROP 
+		'THM1 
+		'(THCONSE (X) (FALLIBLE $?X) (THGOAL (HUMAN $?X)))
+		'THEOREM)
+	(THASSERT THM1) 
+.SP
+	The theorem name is optional.  If it is not given, a unique
+name is generated by the system.  Note that this feature should not
+be used if one later wants to erase the theorem.
+	Asserting the theorem can be avoided by placing thnoassert
+immediately after the theorem name  For example, THM1 is defined but
+not asserted by:
+.sp
+ (THCONSE THM1 THNOASSERT (X) (FALLIBLE $?X) (THGOAL (HUMAN $?X)))
+.sp
+.SP
+*)  (THANTE <thm-name> <list-of-variables> <pattern> <body>)
+	THANTE works in a similar fashion to THCONSE to define and
+(optionally) assert antecedent theorems.
+.SP
+*)  (THERASING <thm-name> <list-of-variables> <pattern> <body>) 
+	THERASING works in a similar fashion to THCONSE to define
+and (optionally) assert antecedent theorems.
+.SP
+*) THPSEUDO
+	"(THPSEUDO)" as the first recommendation to an assertion
+enables one to activate a pattern's antecedent theorems, without
+actually asserting the pattern.  For example, to activate the
+antecedent theorems which match the pattern "(HUMAN TURING)" without
+actually asserting it is accomplished by:
+.sp
+	(THASSERT (HUMAN TURING) (THPSEUDO) $T) 
+.sp
+In many cases this can be done without using THPSEUDO by first
+asserting the pattern with the appropriate theorem reccomendations
+
+
+and then erasing the pattern.  For instance, one could accomplish
+the same effect as using THPSEUDO  in the above example by the
+following:
+.SP
+	(THASSERT (HUMAN TURING) $T)
+	(THERASE (HUMAN TURING))
+.SP
+However, THPSEUDO becomes necessary when some of the variables in
+the pattern are unassigned, thus preventing it from being asserted.
+	THPSEUDO performs in the same fashion for activating a
+pattern's erasing theorems  without actually erasing the pattern.
+.END
+
+

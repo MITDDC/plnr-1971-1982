@@ -1,0 +1,56 @@
+
+(THCONSE TH1 (X Y (T (GENSYM)))
+	  ($?X SUBSET $?Y)	;to show this ...
+
+	  (THUNIQUE 'TH1 $?X $?Y)   	;make sure not already recursively trying to.
+	  (THASSERT ($?T ELEMENT $?X) $T)   ;let t be an element of x
+	  (THGOAL ($?T ELEMENT $?Y) $T))    ;succeed if it is also an element of y
+
+
+(THCONSE TH4-A (T X  Y)
+	  ($?T ELEMENT $?Y)
+
+	  (THGOAL ($?Y POWER $?X))     
+	  (THUNIQUE 'TH4-A $?T $?X $?Y)
+	  (THGOAL ($?T SUBSET $?X) $T))
+
+
+(THANTE TH4-B (T P X)
+	 ($?T ELEMENT $?P)
+
+	 (THGOAL ($?P POWER $?X)) 
+	 (THASSERT ($?T SUBSET $?X) $T))
+
+
+(THCONSE TH3 (T X A B)
+	  ($?T ELEMENT $?X)
+
+	  (THGOAL ($?X INTERSECT $?A $?B))
+	  (THUNIQUE 'TH3 $?T $?X $?A $?B)
+	  (THGOAL ($?T ELEMENT $?A) $T)
+	  (THGOAL ($?T ELEMENT $?B) $T))
+
+
+
+(THANTE TH2 (T I X Y)
+	 ($?T SUBSET $?I)
+
+	 (THGOAL ($?I INTERSECT $?X $?Y))
+	 (THASSERT ($?T SUBSET $?X) $T)
+	 (THASSERT ($?T SUBSET $?Y) $T))
+
+(THDATA)
+
+((C0 INTERSECT A0 B0))
+
+((D0 POWER C0))
+
+((E0 POWER A0))
+
+((F0 POWER B0))
+
+((G0 INTERSECT E0 F0))
+
+NIL
+
+(SETQ BAR (QUOTE (THVAL (QUOTE (THGOAL (D0 SUBSET G0) $T)) NIL)))

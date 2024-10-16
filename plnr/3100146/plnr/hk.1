@@ -1,0 +1,156 @@
+;-*-LISP-*-
+
+(SPECIAL ANS X SELF-ENV TWO-ELEMENT-ASSERTIONS-LIST TWO-ELEMENT-CONSEQUENTS-LIST 
+	 E1 E2 P1 P2)
+
+(COND ((NULL (BOUNDP 'TWO-ELEMENT-ASSERTIONS-LIST))
+       (SETQ TWO-ELEMENT-ASSERTIONS-LIST NIL)))
+(COND ((NULL (BOUNDP 'TWO-ELEMENT-CONSEQUENTS-LIST))
+       (SETQ TWO-ELEMENT-CONSEQUENTS-LIST NIL)))
+
+(DEFMACRO BINDING-CELL (VAR)
+  `(LET ((FOO (%P-CONTENTS-AS-LOCATIVE-OFFSET ,VAR 1))
+	 (BAR (SYMEVAL ,VAR)))
+     (IF (= (%POINTER FOO) (%POINTER BAR))
+	 BAR
+	 (%MAKE-POINTER DTP-EXTERNAL-VALUE-CELL-POINTER FOO))))
+
+(DEFMACRO FUNCALL-ENV (ENV FUN . ARGS)
+  `(FUNCALL (%MAKE-POINTER DTP-CLOSURE (CONS ,FUN ,ENV))
+	    ,@ARGS))
+
+(DEFUN SETUP NIL
+  (thasst-2 'thconse-2-a)   ;assert (human x) -> (fallible x)
+  (thasst-2 'thconse-2-b)   ;assert (greek x) -> (human x)
+  (thass-2 'greek 'socrates))
+
+;(THPROG (X)
+;  (THGOAL (FALLIBLE $?X))
+;  (THGOAL (GREEK $?X))
+;  (THRETURN $?X))
+(DEFUN TRY NIL 
+ (LET ((X 'UNASSIGNED)
+       (SELF-ENV NIL))
+      (SETQ SELF-ENV (CLOSE-VARIABLES '(X SELF-ENV)))
+      (*CATCH 'G00XY
+	(THGOAL-2 'FALLIBLE (BINDING-CELL 'X)
+		   SELF-ENV
+		   (FUNCTION (LAMBDA NIL (THGOAL-2 'GREEK (BINDING-CELL 'X)
+						   SELF-ENV
+						   (FUNCTION (LAMBDA NIL 
+							(*THROW 'G00XY X) )))))))))
+
+;(THFINDALL X (THGOAL (FALLIBLE $?X)))
+(DEFUN TRY1 NIL 
+ (LET ((X 'UNASSIGNED)
+       (SELF-ENV NIL)
+       (ANS NIL))
+      (SETQ SELF-ENV (CLOSE-VARIABLES '(X SELF-ENV ANS)))
+      (THGOAL-2 'FALLIBLE (BINDING-CELL 'X)
+		SELF-ENV 
+		(FUNCTION (LAMBDA NIL 
+				  (SETQ ANS (CONS X ANS)))))
+      ANS))
+
+;(THCONSE (X) (FALLIBLE $?X)
+;  (THGOAL (HUMAN $?X)))
+(DEFUN THCONSE-2-A (VAR-ENV CONT P1 P2)
+   (COMMENT (FORMAT T "~%2a: ~s ~s" P1 P2))
+   (COND ((EQ P1 'FALLIBLE)
+	  (THGOAL-2 'HUMAN (BINDING-CELL 'P2) VAR-ENV CONT))))
+
+;(THCONSE (X) (HUMAN $?X)
+;  (THGOAL (GREEK $?X)))
+(DEFUN THCONSE-2-B (VAR-ENV CONT P1 P2) 
+   (COND ((EQ P3 'HUMAN)
+	  (THGOAL-2 'GREEK (BINDING-CELL 'P2) VAR-ENV CONT))))
+
+(DEFUN CLOSE-VARIABLES (VL)
+  (CDR (%MAKE-POINTER DTP-LIST (CLOSURE VL (FUNCTION CONS)))))
+
+(DEFUN THASS-2 (L1 L2 &AUX ASS)   ;SIMPLE ASSERTION, TWO LONG
+   (SETQ ASS (LIST L1 L2))
+   (COND ((NOT (MEMBER ASS TWO-ELEMENT-ASSERTIONS-LIST))
+	  (SETQ TWO-ELEMENT-ASSERTIONS-LIST 
+		(CONS ASS TWO-ELEMENT-ASSERTIONS-LIST)))))
+
+(DEFUN THASST-2 (TH)		;ASSERT CONSEQUENT THEOREM, TWO LONG
+   (COND ((NOT (MEMQ TH TWO-ELEMENT-CONSEQUENTS-LIST))
+	  (SETQ TWO-ELEMENT-CONSEQUENTS-LIST 
+		(CONS TH TWO-ELEMENT-CONSEQUENTS-LIST)))))
+
+(DEFUN THGOAL-2 (E1 E2 VAR-ENV CONT)    ;ACHIEVE GOAL, TWO LONG
+  (FORMAT T "~%THGOAL: ~s (dtp ~s) ~s (dtp ~s) "
+	  E1 (%DATA-TYPE (BINDING-CELL 'E1))
+	  E2 (%DATA-TYPE (BINDING-CELL 'E2)))
+   (DOLIST (AS TWO-ELEMENT-ASSERTIONS-LIST)
+       (COND ((EQ E1 'UNASSIGNED)
+	      (SETQ E1 (FIRST AS))
+	      (COND ((EQ E2 'UNASSIGNED)
+		     (SETQ E2 (SECOND AS))
+		     (FUNCALL-ENV VAR-ENV CONT)
+		     (SETQ E2 'UNASSIGNED))
+		    ((EQ E2 (SECOND AS))
+		     (FUNCALL-ENV VAR-ENV CONT)))
+	      (SETQ E1 'UNASSIGNED))
+	     ((EQ E1 (FIRST AS))
+	      (COND ((EQ E2 'UNASSIGNED)
+		     (SETQ E2 (SECOND AS))
+		     (FUNCALL-ENV VAR-ENV CONT)
+		     (SETQ E2 'UNASSIGNED))
+		    ((EQ E2 (SECOND AS))
+		     (FUNCALL-ENV VAR-ENV CONT))))))
+   (DOLIST (TH TWO-ELEMENT-CONSEQUENTS-LIST)
+       (COMMENT (FORMAT T "~%Trying consequent theorm (~s ~s ~s)" TH E1 E2))
+       (FUNCALL TH VAR-ENV CONT (BINDING-CELL 'E1) (BINDING-CELL 'E2))))
+
+
+(DEFMACRO THPROG (VAR-L . STMTS)
+  `(LET ((SELF-ENV NIL)
+	 ,@(MAPCAR (FUNCTION (LAMBDA (X) `(,X 'UNASSIGNED)))
+		   VAR-L) )))
+
+;symbol nodes
+;  value   value or unassigned
+;  list of dependants  (list of nodes)
+;this structure stored on plist of lisp symbol under NODE property.
+(DEFCLASS SYMBOL-NODE-CLASS OBJECT-CLASS (BOUNDP VALUE DEPENDENTS))
+
+(DEFMETHOD (SYMBOL-NODE :SET) (V))
+(DEFMETHOD (SYMBOL-NODE :READ) (READER) )
+(DEFMETHOD (SYMBOL-NODE :REVERT) ())
+
+;functions nodes
+;  value   value or unassigned
+;  compute method  (lisp function list nodes)
+;  list of dependants  (list of nodes)
+(DEFCLASS FUNCTION-NODE OBJECT-CLASS (BOUNDP VALUE FCTN LINKS DEPENDENTS))
+
+(DEFMETHOD (FUNCTION-NODE :READ) (READER) )
+
+(DEFMETHOD (FUNCTION-NODE :POKE) ())
+
+(DEFMETHOD (FUNCTION-NODE :REVERT) ())
+
+;((lambda (n1 n2 n3) exp) a1 a2 a3)
+
+;push current binding of N1
+;link N1 and A1 are linked.  if either is (or gets) assigned, the other does to.
+; only in the scope of the lambda.  when lambda retuns, they get unlinked LISP style.
+; N1 gets flushed.
+;<evaluate exp>
+
+;success call continuation
+;failure returns.
+
+
+(DEFUN LINK (USER X)
+  (COND ((SYMBOLP X)
+	 (ADD-DEPENDANT X USER)
+	 X)
+	((SYMBOLP (CAR X))
+	 (LET ((GS (GENSYM))
+	       (FN (CAR X))
+	       (LINKS (MAPCAR (FUNCTION LINK) (CDR X))))
+	   
+		 ()))))) )

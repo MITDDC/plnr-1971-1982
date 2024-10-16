@@ -1,0 +1,910 @@
+
+
+Tùi “S AN ù3¢E± FOR ú'RA134 DSK GJS 
+
+THE DATE ùñIDEXINøè+Á§ 6 - ÷ o1 
+îñCET‘E FUNøu$ÏS DEFINED ARE-  EVLIS THADD THø3gÎô$A›ONGF ú’ Î‰ 
+  ô A               ô A THANø‘T‘ANDT ú’ Ð¡LY THø4(L³1 THAútâÒ© 
+  ô A     ô A           THASSERTF THASúqiT© THASúlPT‘ASVALô$Bƒ 
+  ô A     ô A           THBAú*H…IND Tù¤±ATHBKPúˆ*H…RANCH 
+                 ô A     ô$B¥ANCHUùÈ*H‡HECK ú’!ÏD THCùó¢FA
+                            ú’!Ïø•T‘DATA ú’"OATHDOBô$DŸ1 THDUMP 
+    ô A     ô A     ô ©HERASø¨*H‹RASEFô$E¥ASET ú’#A“L THFø2f?A
+                       ô ATHFAIùã ©HFAIL÷õT‘FINALù6¢ ©HFINDôE A               ô A     ô$F“NDF Tù¤Î‰T THFLUSH THGAL THGO 
+  ô A     ô A     ô A THGOø3T‘GOALFô$GŸALT THINIT THIP 
+            ô Aô A     ô$MƒTCH Tù`Ô‡HDB THMATCHLISTô$MƒTCHTBôE A     ô A     ô A     ô$MƒTCH1 ú’&Á©CH2 TùbÓ§AGE THMESSAGEF 
+        ô A     ô A     ú’&Å§SAGETô$M«NGF TùjÎT THNOFAIL 
+  ô A     ô A     ô A THNOT THNV THOR THORF THùôª ©HOR2 ú’(O¡T 
+ ô A     ô A     ô A  THPRINT2 THPROG THPROGA THPRùñã ©ù)OT 
+ ô A     ô A            THPú´¢ ©HPUSHô$P«TPROPô$R‹AD 
+ô A     ô A     ô A   THúQfÂ“NDF THREMBINDT THREMOVE Tù¢Í¡ROP îñH A     ô A     ô A    Tù¢Íc THRESTRICT THRøµ*Ò THRPùaÁA
+   ô A                    THRPLø0àÓATHRPLø0â ©HRPLAøq) ©HSEMIôE A     ô A                THSETQ THSGAL ú’)Õ‡øqbÄATHTAEô$TƒG 
+ ô A               ô A  THTø1ã ©HTAGTô$T¥UE THú”¬ ©HTRY1ôE A     ô A     ô A      THUNDOF THUNDOT THUùÒgÎATHUNIú5b     ô A     ô A     ô ©HURPLACA THURPLø0â ©HV THúÐf ©HVAR ñ¢ A                         ú’+A¥SUBSTô$VƒRS2 Tù©Å©Q THVö(Š
+UNø‘cIED OR FREE VARIABLE FUNCTIONS ø4¢­Aô Ç‹BPORGô*Ò“FY PUú”)O¡1 
+           ô A     ô A     ô A     ô)Á§SQ THú” Ã‹S 
+îñUgCƒLLED øÓé UNCTIONS ARE-  THAMONG THø3gÎF THAùÑT‘ANDF ú’ Î‰T 
+ ô A     ô A             THø4(L³ THASúqiTATHASSø´ªFATHASSERTT 
+             ô A     ô A THASúÐf ©HBKPTô$CŸND THøsçD THCONDT 
+                   ô Aô ATHDATø(*H‰O THDùðT‘DUMP THERASE 
+ô A     ô A     ô A    TùiA§EF THø´ Ó‹T THFø2f?© THFAù3ÆA
+                       ô A THFAù3 ©HFAILô$F“NALIZø¨*HIND îñH A               ô A     ú’#IDF THøÒgD© THFLUSH THGO THGOAL 
+  ô A     ô A     ô A  THGùðfFATHGOAù•T‘INIT THMATCH 
+               ô Aô A    TùbÓ§AGE TùbÓ§AGEF THMESSAGETô$M«NGF îñH A     ô A     ô A     ú’&ÕGT THùÓãA“L THNùõT‘NV THOR THORF 
+         ô A     ô A     ú’'Ò© THPRù3ª2ATHPROøè*H¡ROGF THREAD 
+ ô A     ô A     ô A   THREMBINDF THREMBINDT ú’)E›PROP ñ¢ A     ô A     ô A     ô$R‹STRICT THRETURN THRPLACA THRPLø0â ñH A     ô A     ô A     THSEMI THSøµ( ©HSUCCø±b ©HTAG ú’*AF 
+ ô A     ô A     ô A   THúcÔATHTRUE THUNDOF THUNDOT THú³¤Ñ«E 
+ ô A     ô A     ô A   THú´¨LƒCA THURPLACD THúÈ*H­SETQ ñ¢†
+REPùôª ŸN VARIABLES IN FILE: 
+
+øÔ¢ÅAIN FIù‘V ½A ERRù’iÔALOW OøS$Ó© PAGEøT'Ò PURE PURIFY PUTPROP1 
+      ô AôSƒSSQ TùaRƒNCH Tùf ©HALIST THA2 THBúPgC‘ THBSô$E±P 
+ ô A     ôT‘FST Tù©Ô¡ THINøÈ*H™AS THù‘kE™ THMESSAGE THML THNF 
+  ô A     ô*HŸLIST ú’'ÎATHPC ú’*RƒCE THú” Ã‹S THTREE THTT Tù*LA
+   ô A     ô$VATHVALUE THWH THX THXX THYô$Yc THZ ú’-1ATYPE ñ¢†Š½A 
+ ô ABOUNDôg-A 
+      FREE IN-  THVAL 
+   ôS‹ú”SÄAWHILEô©E‹ IN- ô$VƒL 
+
+ERRLIST îñH A  BOUùÑI-  
+ô A FREEôg-A THINù5     ôâÔ£'D WHù3" REE IN-  THINIT 
+
+LOW îñH A  BOUùÑI-  
+ô A FREEôg-A THINù5
+OBLIST 
+    ô!O«ND INõ¨     ô©E‹ IN-  THDUMP THFLUSH 
+
+úcÅ…PORG ñ¢ A   BOú³¢ “N-  îñH A  FREø¨$Î[  THINIT 
+
+PURE 
+      BOUNøˆ$Î[ôŠA     øÔ¢ÅAIN-  ú’$Î“T 
+      SETQ'øˆ+È“LE FRø±PI-  THù3¤ÔA
+
+Pú´¤Æ³ 
+  ô …OUND ù3– A
+   ôF¥EE IN-  THINIT 
+
+PUTPROúP     ô§ÕD IN-ôŠA     øÔ¢ÅAIN-  ú’(U©PROP 
+
+SASSQ ñ¢ A   BOú³¢ “N-  îñH A  FREE IN-  THGAL THSGAL ú’*Î“QUE Tù˜ 
+THø0©ACH 
+ô A BOUNøˆ$Î[  THVAL 
+      SETQ'D WHILE BùõgDAù3– ATHVALôE A    FúQb “N-  THAMONGF THøT Î‡H THDùìPT‘FINDTô$S«CCEEDôE A    Søµ(§‰ WHILø¨#R‹E IN-ô*HƒMONGF THSUCCEED 
+
+THAL ñ¢ A   BOú³¢ “N-  Tù`Ô‡HLISTô$R‹MOVE ñ¢ A   SETQ'D WHILEô§ÕD IN-ô*H›ATCHLù4ê ©HREMOVE 
+      FREE IN- ô$R‹M1 
+ñ¢ªHƒLIST ñ¢ A   BOú³¢ “N-  Tù`Ô‡H THVAL 
+      FREE IN-  THAMùó£ ©ùfÏGF THø4(L³1 THAúu ÌATHBIND THBRANCHú³     ô A     ô$F“NDT Tù`Ô‡H2 THúQiÔ¥ICT Tù`Ô‡H THMø´éÁEF 
+                THREù°¤Î‰F THRø³aIDT THúqjQATHSGAùˆ*H§UCCEEøˆ*H©RY1 
+         ô A  THUùÑ'ÆATHUNIú5b ©HV1 THVARS2 THVARSUBST THúÔâÔ£ 
+  ô A     ô ©HINITôE A    Søµ(§‰ WHILE FREE IN-  THAPPLY1 THBIùÑT‘øT Î‡HUN Tù¤Î‰T 
+ ô A               ô A   THù±iÓƒGEF Tù¢Í…INDF ú’)E›BINDTôE A     ô A     ô A       THSUCCEED THUNDOF ú’$Î“T 
+îñU$Ae 
+  ô …OUND ù3– ATHGOAùˆ*H›ATCHLIST THREM1ôE A    Søµ(§‰ WHILø¨!O«ND IN-  THGOAL THMATCHLISúˆ*H¥EM1 îñH A  FREø¨$Î[  THTúVP
+THBúPgC‘ 
+      BOUND IN-  THVAL 
+  ô §øµ(§‰ WHILø¨!O«ND INõ¨T‘VAL 
+      FREø¨$Î[  THAù³çG THBRø3¡ÈATHDO1ô$F“NDF Tù¤Î‰T THSú°áÅ‹D 
+ ô ASETQ'D WHILE FREE IN-  THø3gÎF THBúPgC‘ THDOö(*HINDF ú’#IDT 
+ô A               ô A    TùêÃ‡EED îñCET‘BS 
+      BOUND IN-  THRø³gÖ‹ 
+  ô §ETQ'DôäI™E BOUùÑI-  THúQfÏ­E 
+      FREE IN-  THREM1 
+îñU$E±úŠA     øSêÎ‰ IN- ô$VƒL 
+      SETQ'øˆ+È“LE BOú³¢ “N-  Tù ÌA
+   ôF¥EE INõ¨T‘AND TùgD© THASúlPT‘COND THDO THDO1 THNOT THOúHŠA     ô A     ú’'Òe THPRùñà     ô)Å©Q'D WHILE FREE ù3– ATHANDô$ADT THø4é±ATHCOND THDO THDO1 
+     ô A     ô A     ô ©HNOT ú’'ÒATHOR2ô$P¥OGA 
+
+THFST 
+      BOUND INõ¨T‘ø1" ©HREMOúÑP     ôâÔ£'D WHILE BOUND ù3– ATHADDô$R‹MOVE ñ¢ A   FRø±PI-  THù4T‘REM1 ñ¢†Š©HFSTPôE A    BOUND IN-  THADD THREù³ëEA
+   ôS‹TQ'D úò$Ì‹ BOUNøˆ$Î[  THAø‘T‘REMOVE 
+      øÔ¢ÅAIN-  ú’$ÐATHREMö(ŠTHINF 
+      BOUND IN- ôE A    FúQb “N-  Tù É™ THVAùˆŠA     úqjQOD WHILE FREE IN-  THFAIL 
+
+Tù ÓAñ¢ A   BOú³¢ “N-  TùbDA
+      SETQ'D úò$Ì‹ BOUNøˆ$Î[  THAø‘     ô©E‹ IN- ô$I¡ 
+
+ú’&E­EL 
+ô A BOUND IN-  
+      FREE ù3– ATHVALôE A    Søµ(§‰ WHILø¨#R‹E IN-ô*H­AL 
+
+THMESSAGø¨ŠA     øSêÎ‰ IN- ôE A    FREE IN-  THFAIL THFAù3ÆATHMESúpcÅ THVAùˆŠA     úqjQOD WHIù‘PF¥EE IN-  THFAIL THFAIL?F THMESSø1âÆAñ¢†Š©HML îñH A  BOUùÑI-  THMATCH1 THRú Ãƒ THRPùaÄATHSETú(ŠA     úqjQOD WHIù‘PBŸUND IùËP ©HSETQôE A    FREE IN-  THRPLACAS Tù¨LƒCDS îñH A  SETú)â ¯HILE øÔ¢ÅAIN-  ú’)P™ACAS THRPLACDS ñ¢†Š©HNF îñH A  BOUùÑI-  THADD THMATCHLIST THREù³ëEA
+   ôS‹TQ'D úò$Ì‹ BOUNøˆ$Î[  THAø‘T‘MATCHLIST THREMOVE 
+      FREø¨$Î[ô*H“P THRø³X     ô)Å©Q'D WHILE FREE ù3– ATHIP ú’)E›1 
+îñU$O™IST îñH A  BOUùÑI-  THù°jC‘ THVAùˆŠA     FREE IN-  THAPPLY1 Tù¤Î‰ THMAúä2ATHMATør ©HMESSø1âÆATHTRYö(ŠA     SETQ'D WHIù‘PF¥EE INõ¨T‘BIND ú’*R³1 
+
+THON 
+      BOUND ù3– ATHREMùõ¢     ô)Å©Q'D WùfEABOUNDôg-A THREMOVE 
+      FREE IN-  THúQf±Añ¢†Š©HPC îñH A  BOUùÑI-  THREM1 
+   ôS‹TQ'D úò$Ì‹ BOUNøˆ$Î[  THRø³X     ô#R‹E IN-ô*H…A THBø4
+THTRACE 
+      BOUND IùËP     ô#R‹E IN-ô*HƒPPLY1ô$A§S1 THøRèTATHGOAL THINIT îñH A  SETú)â ¯HILE øÔ¢ÅAIN-  THINIT 
+
+THTRACES ñ¢ A   BOú³¢ “N-  îñH A  FREø¨$Î[  THAú&Yc THASS1 THBKPT THGOAL 
+
+THTRø±Pô A BOUNøˆ$Î[  THVø3      FREE IN- ô$A›ONG TùfÏGF THø3¢ ©HANDTô$A¡PLY1 ú’ Ó§1 
+ ô A     ô ATHASSERTF THASSERTT THBINøˆ*H…RANCHô$B¥ANCHUùÈŠA     ô A     ú’!ÏD THCONDT THDO ú’"Oc THDOøH*H‹RASEFô$E¥ASET 
+                THøÐdÌATHFAIùÐT‘FAIL?øÈ*HINALIûQPT‘FIND ú’#IDF 
+                THFINDT TùçÁ™ô$GŸALT Tù`Ô‡H1 THù±iÓƒGE THMESSAGEF îñH A     ô A  THMú³£ÆATHOR ú’'Òe THPOúT‘PROG ú’(RŸGA THújP¥OP 
+                THREù°¤Î‰F THRø³aIDT THúQfÐ¥OP THúT&A‡A THRú Ã‰ 
+            ô ©HSETQô$S«CCEEDô$TƒG THTRY1 THUNDOF THVAL 
+ô A SETQôñW‘ILE FúQb “N-  TùfÏG THAùÑT‘APPLY1 THASS1 THBIND 
+       ô Aô A     ô A  THBúPgC‘UN THCOND THDO ú’#A“L? 
+ô A     ô A     ô A    Tù¤ÎƒLIZE ú’#ID THFù3¢TATHGOAL 
+                ô A     ôT‘MATCHö(*H›ESSAGø¨*H›ESSAGø±T‘OR 
+          ô A     ô A    Tù'Ð© THPROG THPUTPROP THREMPRùô     ô A     ô A     ô ©HRPLAøpPT‘RPLACD THSETQ THTAG THUNDOF 
+ñ¢ªH©úˆŠA     øSêÎ‰ IN- ô$A‰D 
+      FREE ù3– ATHIP ñ¢†Š©HTTL ñ¢ A   BOú³¢ “N-  TùbDA
+   ôS‹TQ'D úò$Ì‹ BOUND IN-  THADD 
+     ô©E‹ IN- ô$I¡ 
+
+ú’+     ô!O«ND INõ¨T‘GOAL THMATCHDB ú’&Á©CHTB ú’+A™ 
+  ô §ETQ'D WHILE BOUND IN-  THøóàÌATHVALôE A    FúQb “N-  Tù Ò§2 THVø4©Õ…ST 
+
+THVALUE 
+      BOUND IùËP ©ù ÌA
+   ôS‹TQ'D úò$Ì‹ BOUND IN-  THVø3     ô©E‹ IN- ô$ADT THøRèTATHCONø•T‘FAIL?ô$FƒIL?T ú’#ÏƒLT 
+                THMEútàÇ‹ THMEútàÇ‹T THMú³£ÔATHORTô$P¥OGA îñH A            THRø³aIDT THúqjQATHTAGúˆ*H­SETQ 
+      SETQ'D WHILEô©E‹ IN- ô$S‹TQ THúÔâÔ£ 
+
+ú’+ÈA
+   ôBŸUND IN-  THADD THMATCHLIST THRø³gÖ‹ôE A    Søµ(§‰ WHILø¨!O«ND IN-  THADD Tù¢ÍŸVE 
+ô A FREEôg-A THIPô$R‹M1 
+ñ¢ªH± 
+  ô …OUND ù3– ATHASS1 THFAIL THFINALIZE ú’#IDT THøóàÌATHMATør     ô A     ôT‘CHECK THUNION Tù`Ô‡H THMø5!Èc THNOøÐdÌATHSUCCEED 
+             ô ©HTRY1ô$VƒRSUBSúˆŠA     úqjQOD WHIù‘PBŸUND IN-  THASS1 THFAIL THFINALù6¢ ©ù¤Î‰T 
+ ô A     ô A              TùçÁ™ THMAúä2ATHMATør ©HSUCCø±b     ô A     ô A     ô A THTRY1 THVARSUBST 
+    ô#R‹E IN-ô*H©AE 
+ñ¢ªH±X 
+ ô ABOUNDôg-A 
+      FREE IùËP ©HAMONøè*HINDF ú’#Á™ THTAE THUNDOF THUNIQUE Tù˜     ô A     ô*H“NIT îñH A  SETú)â ¯HILE FREE IN-  THAMONG THFINDFô$Gƒùˆ*H©AE THú³¢O 
+  ô A               ô A  THUùÒhÕ‹ THV1ô$IIT 
+ñ¢ªH³ 
+  ô …OUND ù3– ATHASSö(*HINDT THGOAL THMATCH2 THCHø°å ©HMATCùP     ô A     ô*H©RY1 îñH A  SETQ'D WHILE øSêÎ‰ IN- ô$A§S1 THøÒgD© THGOAL THMATCH2 THTRY1 îñH A  FREø¨$Î[  THTø1PT‘TRY îñH A  SETú)â ¯HILE FREE IN-  THTAE THTRY 
+îñU$YcôE A    BùõgDAIN-  ú’ Ó§1 THGOAL 
+    ô)Å©Q'D WùfEABOUNDôg-A THGOø3     ô©E‹ IN- ô$TƒE THTúVP      SETQ'D WHILE FREE IùËP ©HTAE ú’*R³ 
+
+ú’-     ô!O«ND INõ¨T‘FINDT THGOAL THú”¬±A
+   ôS‹TQ'D úò$Ì‹ BOUND IN-  THFINDT THTRYö(ŠA     øÔ¢ÅAIN-  ú’*R³ 
+  ô §ETQ'DôäI™E FREE IN-  THTRY 
+
+THZ1 
+ ô AøSêÎ‰ IN- ô$GŸAL 
+ô A FREE IN-  THTRû(ŠA     úqjQOD WHIù‘PF¥EE INõ¨T‘TRY îñCET³PE 
+ô A BOUNøˆ$Î[  THASS1 
+      SETQ'D WùfEABOUNDôg-A THASúlP     ô©E‹ IN- ô$TƒE 
+
+
+
+EVLIúcE     ô,Ð‹- EXPúHŠA     ARGUMENTS- X 
+     ôªÎ‡TIONSôàÌ™ED- îñH A  CALù‘b …Y- THù°jC‘1 THMUNGF 
+
+
+
+THADD
+
+   ôT³úV ‹XPR îñH A  ARGú³bÎ©S- THTT THPL 
+ô A OTHEúH!O«ND VAúR`Â™ES THùÑT‘WH THørÐT‘LAS Tù*LATHT1 ú’#S© 
+                      ô A THFSú”T‘FOO îñH A  FUNøu$ÏS CALù‘b-ATHPUTPROP THIP ñ¢ A   CAù“"ÄABY- TùiÓc THDATA THERASEF 
+
+
+
+ú’ ÍŸNG
+îñH A  TYPø«PF‹XPR îñH A  ARGú³bÎ©S- THA 
+      FREE VARIABLES-ô$X±ô$A™IST Tù)E‹ 
+  ô REE VARIABLES Søµ(§‰- THTúQb ©HXX îñH A  FUNøu$ÏS CALù‘b-ATHGALô$VƒL THPú´ä       CALLED BY- 
+
+
+îñU$A›ONGFîñCE A    Tû4"­AEXPR ñ¢ A   ARøõfÅTS- 
+      FREø¨+A¥IABLEúkPT‘TREE ú’!RƒNCH THABRANCH THALIST 
+ ô AFREE úÐiIƒBLES úqjQOD- THø0©ACH THøT Î‡H 
+      FUNCTIONS CALLED- THúèTAñ¢ A   CAù“"ÄABY- îñCE
+THAND
+
+    ô*Y¡E- FEû)     ô ÒUMENTúkPAA
+   ôF¥EE VAúR`Â™ES- Tù)E‹ THEXP 
+      FREE VARIAøS"ÓASETQ'ø‹PT‘EXP Tù)E‹ 
+  ô UNCTIùó© ‡ALLED- THPUSH îñH A  CALù‘b …Y- 
+ñƒE
+THANDF
+
+      TYPE- Eû)     ô ÒUMENTúkP     ôªÎ‡TIONSôàÌ™ED- THBRANCHUN 
+      CALLED øVV ñCE
+THAùÑ*
+   ôT³PE- EXPR 
+    ô ÒUMENTúkP     ô©E‹ VARIø0¦E§- THTúQb ©HEXP ú’+A™UE 
+ô A FREE VARIABLES SETQ'D- TùlPA
+   ôF«NCTIOùÔÐCƒLLED-ô$B¥ANCH ú’(O¡T 
+      CALLEøˆ!Y[ 
+
+ñ¢†Š©HAPPLû#E      TYPE- FEXPR 
+     ôiG«MENTSõ¨&     ô#UCTIONúh!Á™LED- ú’ Ð¡LY1 
+      CALLED BY- 
+
+
+îñU$A¡ú,±
+  ô ©YPE- ø¶(RA
+      ARGUMENú”Ö ©HM THøH"A© 
+  ô REE Vø4¤Á…LES- ú’*RƒCE THú”¢ÅATHALIúuT‘OLIST 
+      FREE VARIABù‘i §ETQ'Dõ¨*HƒLIST ú’*R‹E 
+ ô AFUNCTù3çSACALLED- THBIND ú’&Á©CH1 Tù*Ó‘ THPRùñà ©HPOPT 
+      CALLED BY- ú’ Ð¡LY THú”¬±A
+   ôF«NARG úÐiIƒBLES ñ¢ A         FREE FUNCTIONALS- THTúPaÅ§ôE
+
+TùiÓ‹RT
+îñH A  TYPE- FEXPR îñH A  ARGú³bÎ©S- THø(ŠA     øÕgC©IONS øpfL‹D- THø4é±A
+   ôCƒLLED BY- 
+
+
+
+THASSERú‘†Š    ô*Y¡E- EXú     ôiG«MENTSõ¨ŠA     FREE VARIAøS"Ó[ THTRø±P     ô©E‹ VARIABLES SETQ'D- 
+    ô#UCTIONúh!Á™LED- ú’)E›OVE Tù'Ð© 
+  ô ‡ALLED BY- 
+
+
+
+THASSERTT
+îñH Aô*Y¡E- EXú     ôiG«MENTS- 
+      øÔ¢ÅAVARIAøS"Ó[ THTRø±P     ô©E‹ VARIø0¦E§ SETQôñ     ô#UCTIONS CALLED- THPOPT 
+ ô ACALLEøˆ!Y[ 
+
+ñ¢†Š©HASS1ñ¢†ŠA     ú–hE[ EXPR 
+      AúQêÍ‹NTS- ú’  ¡ 
+  ô ŸTHER BOUND VARIABLES THX ú’,±ATHY Tû4" ¡SEUDOôE A    FúQb ­ARIABù‘i­ATHTRACE THTREE THEXP 
+      FúQb ­ø4¤Á…LES Søµ(§‰- THEûT‘TREE 
+      FUùÐêIŸNS CAù“"Ä[ THPUúQPT‘VARSUøTê ©HADD ú’)E›OVE Tù*Ó‘ 
+  ô A                 THTAE 
+ô A CALLø±B³- THAútâÒ© THERø4â     ô#UARG VARIABLES îñH A     ôF¥EE FUùÐêIŸNALS- THTRACES 
+
+
+
+THø4ëA™
+
+ ô ATYPE-ô¢Ø¡R 
+ ô AARGUMø³ªS[ X 
+      FREE VARIABLES- THAù’iÔAñ¢ A   FRø±PVƒRIABLø´ÐS‹TQ'D- 
+      Fú³¡Ô“ONS Cø3&E‰- THGø3     ôàÌ™ED BYõ¨Š
+
+îñU$Bƒ
+
+ ô ATYPE- EXPR 
+      ARGUMEùÕ)­ATH1 Tù     ôêH‹R BOUùÑVƒRIABLø´ÐT‘P 
+      FREE úÐiIƒBLES-ô$P‡ 
+  ô REE VARIABLES SETQ'D- 
+ ô AFUNCTù3çSACALLEø‹P     ôàÌ™ED BYõ¨*H¥EM1 
+
+
+
+THBAP
+
+      TYPø«PE±ú     ôiG«MENTSõ¨*Hc TH2 
+      OTùi …OUND úÐiIƒBLES ú’(     ô#R‹E VARù0aL‹S- THúÐ     ô©E‹ VARIABLES SETQ'D- 
+    ô#UCTIONúh!Á™LED- ñ¢ A   CAù“"ÄABY- Tù¢Íc 
+
+
+
+THBINDñ¢†ŠA     ú–hE[ EXPRôE A    ARGUMENTS- A 
+      øÔ¢ÅAVARIAøS"Ó[ THOLù4ê ©HALISúˆ*H©REE îñH A  FREE VARIABLES SETQ'D- THALIúuT‘ú”¢ÅATHOLIúu     ôªÎ‡TIONS CALLED- Tù*Ó‘ THBIö(ŠA     øpfL‹D BY-ô$A¡PLY1 ú’#ID THMø´éÁEF THú§ÇA
+
+
+
+THBI1
+
+      TYúV ‹XPR îñH A  ARGú³bÎ©S- X ñ¢ A   FUùÐêIŸNS CALLED- 
+  ô ‡ALLEDô¬­ATHBINøˆŠ
+
+THBKPT
+
+      TYPEõ¨#E±PR 
+ô A ARGUù±gT§- L îñH A  FREø¨+A¥IABLES- THTRACE THVALUE 
+    ô#R‹ø¨+A¥IABLEúh)Å©Q'D- ñ¢ A   FUNCTIONS CAù“"Ä[ 
+  ô ‡ALLEDô¬­A
+   ôF«NARG úÐiIƒBLES ñ¢ A     ô REE FUNCTIONALS- THTRACESôE
+
+ú’!RƒNCH
+ñ¢ A   TYúV ‹XPR îñH A  ARGUMENTS- 
+ô A FREEô Ò“ABLESõ¨*H©REE THBRANCH THABRANCH 
+ô A FREEô Ò“ABLESôâÔ£'D- Tù©ACH 
+ô A FUNCTIONS CALLED- 
+      CALù‘b …û+PT‘ANDT ú’(RŸGT 
+ñ¢†ŠTHBRANCHUN
+
+ô A TYPEõ¨"Ø¡R 
+ ô AARGUMø³ªS[ 
+  ô ŸTHER øSêÎ‰ VARIø0¦E§ X 
+      FREE VARIABLESõ¨*H©REE TùfI§T 
+ ô AFREE úÐiIƒBLES úqjQOD- THTREE THALIúu     ôªÎ‡TIONSôàÌ™ED- THPOPT 
+      CALLEDô¬­ATHANDøÈ*H¡ROGF ñ¢†Š
+THør"Ã—
+
+ ô ATYPE- EXPR 
+      ARGUMENTS- ú’(R‰ô$XA
+   ôO©HER BùõgDAVARIABLES THY îñH A  FUNøu$ÏS CALù‘b-A
+   ôCƒLLED øVV ©HMATCù     ôªÎƒRG VARIABLES 
+          ô!O«ND FUùÐêIŸNALS-ô$YA
+
+îñCET‘CONDîñCE A    TYPE- FEXPRôE A    AúQêÍ‹NTS- ú’        FREE VARIABLES- THú”¢ÅATHEXPôE A    FúQb ­ARIABù‘i §ETQ'Dõ¨*H‹XP THTREE 
+      FUNCTIONS CAù“"Ä[ô$P«SH 
+ô A CALLø±B³- 
+
+
+
+THCONø‘†Š    ô*Y¡E- EXú     ôiG«MENTSõ¨ŠA     øÕgC©IONS øpfL‹D- THOR2 
+      CALLED Bû+P
+
+ñ¢ªH‡ONDTîñCE A    Tû4"­AEXPR ñ¢ A   ARGUMENTS- îñH A  FREø¨+A¥IABLEúkPT‘TREE THVALUE 
+      FREEô Ò“ABLESôâÔ£'D- îñH A  FUNøu$ÏS CALù‘b-A
+      CALLED BY- 
+
+
+
+THDø5 ñ¢ A   TYúV ‹XPR îñH A  ARGUMENTS- 
+ô A OTHEúH!O«ND VAúR`Â™ES X ñ¢ A   FUùÐêIŸNS CAù“"Ä[ THADøˆŠA     CALLED BY- 
+
+
+
+Tù'
+   ôT³PE- Fø¶(RA
+   ôA¥GUMENú”Ö ƒ 
+      FREE Vø4¤Á…LES- ú’*R‹E THEû      FREE VARIABLES SETQôñ ©HEXP ú’*R‹E 
+ ô AFUNCTù3çSACALLEø‹PT‘PUSH 
+      CALLED BY- 
+
+
+ñ¢ªH‰ùð†Š    ô*Y¡E- EXú      ARGUMENTSõ¨ŠA     øÔ¢ÅAVARIAøS"Ó[ THTRø±P     ô©E‹ VARIø0¦E§ SETQôñ       FUNCTIONS CALLED- ú’"Oc 
+  ô ‡ALLEDô¬­A
+
+îñCET‘DO1
+ñ¢ A   TYPE- EXPR îñH A  ARGú³bÎ©S- 
+ô A FREE VARIABLES- THTREE TùlPATHBRAùÐä ©HABRAùÐä     ô#R‹E VARù0aL‹S SETQ'D- THBRANCH THEXP 
+   ôF«ùÐêIŸNS CAù“"Ä[ 
+  ô ‡ALLED BY- THDOBôE
+
+ú’"U›P
+
+ô A TYPEõ¨"Ø¡R 
+ ô AARGUMø³ªS[ 
+  ô ŸTHER BOUND VARIABLES P BUørâÔAATOM ù3¢ ™ENGTHõ°ªÃ—ET ASúU     ô©E‹ VARIABLES- OBLù4ê     ô#R‹E VARù0aL‹S SETQ'D- 
+      FUNCTIOùÔÐCƒLLED-ôE A    Cø3&E‰ BY- ñ¢†Š
+THø´ Ó‹
+
+      TYPE- FEXPR 
+      ø4£Õ›ø³ªS[ THA ñ¢ A   FUùÐêIŸNS CALLED- THASúlP     ôàÌ™ED BYõ¨Š
+
+ú’"ÒƒSEF
+ñ¢ A   TYúV ‹XPR îñH A  ARGUMENTS- 
+      FREEô Ò“ABLESõ¨*H©REE îñH A  FREø¨+A¥IABLEúh)Å©Q'D- 
+      FUùÐêIŸNS CAù“"Ä[ THADøˆ*H¡OPT 
+      CALLED BY- 
+ñ¢†ŠTHERø4âÔ
+  ô ©YPE- ø¶(RA
+   ôA¥GUMENTS- 
+      FREE VARIABLEúkPT‘ú”¢ÅA
+   ôF¥EE VAúR`Â™ES SETQ'D- 
+  ô UNCTIùó© ‡ALLEDõ¨*H¡OPT îñH A  CALù‘b …Y- 
+ñ¢†ŠTHFAù3Š      TYPE- FEXPR 
+    ô ÒUMENTúkPT‘A 
+ ô AOTHERô§ÕD VARù0aL‹S THTREE1 THA1 ú’,     ô#R‹E VARù0aL‹S- THTREE THINF THMESSAGEôE A    FúQb ­ARIABù‘i §ETQ'Dõ¨*H›ESSAGø¨*H“NF 
+      FUNCTIONS CALLED- îñH Aô!Á™LED Bû+P
+
+ñ¢ªHAIL?
+
+      Tû4"­AEXPR ñ¢ A   ARøõfÅTS- PúQA‡T 
+ ô AFREE úÐiIƒBLES-ô$T¥EE THVALUE 
+      FREE Vø4¤Á…LES Søµ(§‰- THTúQb     ô#UCTIONúh!Á™LED- THPUSH 
+ ô ACALLEøˆ!Y[ 
+
+ñ¢†Š©HFAIL?F
+
+      TYPE- EXú     ôiG«MENTSõ¨ŠA     øÔ¢ÅAVARIAøS"Ó[ THTREE THMESSAGE 
+      FREEô Ò“ø0¦E§ SETQôñ ©HMESSø1â       FUNCTIONúh!Á™LED- ú’(O¡T 
+ ô ACALLEøˆ!Y[ 
+
+ñ¢†Š©HFAIL÷õŠ    ô*Y¡E- EXPR 
+      ARGUMENTSõ¨ŠA     øÔ¢ÅAVARIAøS"Ó[ THVAù•b     ô#R‹E VARIABLES SETú)â-A
+   ôF«NCTIOùÔÐCƒLLED- THPOPT 
+      CALLø±B³- 
+îñCETHFINø3$Ú‹
+
+ ô ATYPE-ô¢Ø¡R 
+      ARGUMENTS- THA 
+   ôO©ùi …OUND úÐiIƒBLES ú’*R‹E1 THT THX 
+  ô REE Vø4¤Á…LES- ú’*R‹E 
+ ô AFREE úÐiIƒBLES úqjQOD- THú”¢ÅA
+      FUNCTIONS CALLED-ôE A    Cø3&E‰ BY- ñ¢†Š
+THøÒgD
+  ô ©YPE- FEXPR 
+  ô ƒRGUMEùÕ)­ATHA îñH A  FREE VARIABLES- THTREE ñ¢ A   FRø±PVƒRIABLø´ÐS‹TQ'D-ô$T¥EE 
+ô A FUNCTIONS CALLED- THBIND THPUúrT‘ú§Çƒ 
+  ô ‡ALLEDô¬­A
+
+
+
+THFINDøÃE     ô,Ð‹- EXPúHŠA     ø4£Õ›ENTS-ôE A    FúQb ­ARIABù‘i­ATHBRANCH THXX THTREE 
+  ô REE Vø4¤Á…LES Søµ(§‰- THXû*H…RANCHôE A    FUNCTIONS Cø3&E‰- THPùô*     ô!Á™LED BY- 
+
+
+
+THFINDT
+ñ¢ A   TYúV ‹XPR îñH A  ARGú³bÎ©S- 
+ô A OTHER BOUND VARIABLES THCDAR ú’- ©ùPT‘X 
+ ô AFREE úÐiIƒBLES- THTREE THøT Î‡H THAù’iÔATHABRø3¡ÈA
+   ôF¥EE VAúR`Â™ES SEú”SÄ[ THALù4ê ©HTREE THBRANCH 
+      FUùÐêIŸNS CAù“"Ä[ THVAúH*H­ARS2 ú’+A¥SUBSTô$PŸPT 
+      CALLø±B³- 
+îñCETHFLUúrŠ      TYPE- FEXPR 
+    ô ÒUMENTúkPAA
+   ôO©HER BùõgDAVARIAøS"ÓAB C D 
+      FREE VARIABLES- ùð¦I§úˆŠA     øÔ¢ÅAVARIAøS"ÓASETQ'D- 
+     ôªÎ‡TIONSôàÌ™ED- îñH A  CALù‘b …Y- 
+ñ¢†ŠTHGAùƒE     ô,Ð‹- EXPR 
+      ARGUMENTS-ôYA
+   ôF¥EE VAúR`Â™ES- Tù,     ô#R‹E VARIABLES SETú)â-ATHXX ñ¢ A   FUùÐêIŸNS CALLED- 
+      CALLEDô¬­ATHAMOùÑÐT‘ASVALô$MƒTCH2 ú’)E§TRICTô$VƒRS2 
+      FUNARG VARIABLES îñH Aô A   FRø±PF«NCTIOùÐfS[ SASSQ 
+
+
+
+ú’#Ï
+  ô ©YPE- øÑlP¥ 
+  ô ƒRGUMEùÕ)­AX 
+ ô AFUNCTù3çSACALLED- 
+      CALLED BYõ¨Š
+
+îñU$GŸAL
+îñH A  TYPø«PF‹XPR îñH A  ARGUMENTS- THø(ŠA     ùõ$E¥ BOUNøˆ+A¥IABLES THX THY THY1 THZ Tù˜ ©HA1 TùY ©HV 
+ô A FREEô Ò“ABLESõ¨*H©RACE THTREE 
+      FREE VARIAøS"ÓAúqjQOD- THú”¢ÅA
+   ôF«NCTIONS CALLED-ô$VƒRSUBSúˆ*H›ATCHDøH*H©RY THúiÈA
+   ôCƒLLED øVV     ô#UARG VARIABLES 
+         ôF¥EE FUùÐêIŸNALS-ô$T¥ACES ñ¢†Š
+THøóàÌ
+
+      TYPE-ôlP¥ 
+  ô ƒRGUMEùÕ)­A
+      FUNCTIONS CALLED-ô$T¥Y1 THúèTA
+   ôCƒLLED øVV 
+
+ñ¢ªHOALT
+
+      TYPE- EXPR 
+   ôA¥øõfÅTS- îñH A  FREø¨+A¥IABLES- THVALUEô$T¥EE 
+ô A FREEô Ò“ABLESôâÔ£'D- îñH A  FUNøu$ÏS CALù‘b-ATHVARSUBST THPOPT 
+     ôàÌ™ED BYõ¨Š
+
+ú’$Î“T
+
+ô A TYPEõ¨#E±PR 
+      ARGUù±gT§- L îñH A  FREø¨+A¥IABLES- PURE LOW THXX THTúPaÅATHALIúuE¥RLISTôE A    FúQb ­ARIABù‘i §ETQ'D- ERRLIST THALIST THTRACEô$X±ô*Ò‹ 
+  ô UNCTIùó© ‡ALLED- 
+      øpfL‹D BY-ôE A    Fú³ Ò VARIø0¦E§ 
+  ô A     øÔ¢ÅAFUNCTù3çA™S- PAGEBPORG PURIFY 
+
+îñCET‘IP
+îñH A  TYPø«PE±PR 
+ô A ARGUù±gT§- THI 
+      Oú’"ÒABOUNDô Ò“ABLESô$Tc THT3 THSV THT2 THI1 
+  ô REE Vø4¤Á…LES- ú’'FATHFSTô$W‘ THLAúh*H©TL THFSTP THTT 
+      FREE VAúR`Â™ø´ÐS‹TQ'D-ô$N 
+  ô UNCTIONS CALLEDõ¨ŠA     øpfL‹D BY-ô$A‰D 
+ñ¢†ŠTHMAúä
+   ôT³PE- Eû) QLEXPR) 
+      ARGUMENTS-ô$XA
+   ôO©HER BùõgDAVARIAøS"ÓATHOLIúuT‘ALIST 
+      FúQb ­ARIABù‘i­ATHALIúu      FREE VARIABLES SETQôñ     ô#UCTIONúh!Á™LED- ú’&Á©CH1 îñH A  CALLED BY- 
+
+
+
+THMATCHDBñ¢†ŠAô ATYPE-ôlP¥ 
+  ô ƒRGUMENTS- THV îñH A  FUNøu$ÏS CALù‘b-ATHMATør&I§T 
+ ô ACALLEøˆ!Y[ THGOø3T‘TRY 
+
+
+
+THMATCHLIST
+ñ¢ A   TYúV ‹XPR îñH A  ARGú³bÎ©S- THúT‘WH 
+      OTHEúH!O«ND VAúR`Â™ES THøLPT‘B2 THL THNF THAL THA1 THAöH*H¥N 
+ ô A     ô A     ô A  THLö(*H™2 THRVC 
+      FUNCTIONS CALLø± ñH A  CALù‘b …Y- THù°jC‘DB THMATCHTB 
+ñ¢†ŠTHMAúäT…
+
+ ô ATYPE-ôlP¥ 
+  ô ƒRGUMEùÕ)­ATHU Tù      FUNCTIONS CALLED- Tù`Ô‡HLISTôE A    Cø3&E‰ BY- ú’*A‹ THTRû(Š
+
+THMATCH1
+ñ¢ A   TYúV ‹XPR îñH A  ARGUMENTS- THX THY 
+  ô ŸTHER øSêÎ‰ VARIø0¦E§ THMLôE A    FúQb ­ARIABLES- THOLIST THTREE 
+   ôF¥ø±PVƒRIABLø´ÐS‹TQ'D-ô$T¥EE 
+      FUNCú’gÎ§ CALLø± ©HVAL ú’&Á©CH2 Tù*Ó‘ EVLIúhŠA     øpfL‹D BY-ô$A¡PLY1 THMATCH THMESSAGEF Tù)Yc 
+îñCETHMATør
+   ôT³PE- Eû)       ARGUMENTúkPT‘X THYôE A    Oú’"ÒABOUND VARIABLES XPAIR YPAù4UA
+   ôF¥EE VAúR`Â™ES- TùæI§T THAù’iÔA
+      FREE VARIABLES SETQ'D-ôE Aô UNCTIùó© ‡ALLEDõ¨*H­AL THCHECK THRPùaÁ§ THRPùaÄ§ THUNù3ç     ô A     ô A     ú’+A¥ THGAùˆŠA     CALLED BY- THMATCH1 ñ¢†Š
+THù±iÓƒGE
+îñH A  TYPø«PF‹XPR îñH A  ARGUMENTS- THø(ŠA     øÔ¢ÅAVARIAøS"Ó[ THTREE THVALUE 
+      FúQb ­ARIABù‘i §ETQ'Dõ¨*H©REE îñH A  FUNøu$ÏS CALLED- THPUSH 
+      CALLEøˆ!Y[ôE
+
+TùbÓ§AGEFîñCE A    TYPE- EXPR ñ¢ A   ARøõfÅTS- îñH A  OTHø´BŸUND Vø4¤Á…LES Bùñ     ô©E‹ VARIABLES- THTREE THMESSø1â ©HALISúˆ*HŸLIST ñ¢ A   FRø±PVƒRIABLø´ÐS‹TQ'D- THALIST TùbÓ§AGE Tù)E‹ 
+  ô UNCTIONS CALLED- THPOPT Tù¤Î‰ THMAúä1ATHPUSù*H¡ROGA ñ¢ A   CAù“"ÄABY- 
+
+
+
+THMESSAGET
+
+    ô*Y¡ø«PE±PR 
+ô A ARGUù±gT§- 
+      FREE úÐiIƒBLES-ô$VƒLUE îñH A  FREø¨+A¥IABLEúh)Å©Q'D- ñ¢ A   FUùÐêIŸNS CALLED- THPOPT 
+     ôàÌ™ED BYõ¨Š
+
+ú’&ÕGF
+îñH A  TYPø«PE±PR 
+      ARGUù±gT§- 
+ ô AFREE úÐiIƒBLES- THTREE 
+      FREEô Ò“ABLESôâÔ£'D- îñH A  FUNøu$ÏS CALù‘b-AEVLIS THPOPT 
+      CALLED BYõ¨Šñ¢†ŠTHMUùÑê
+   ôT³PE- EXPR 
+    ô ÒUMENTúkP     ô©E‹ VARIø0¦E§- THVø3*ÅA
+   ôF¥EE VAúR`Â™ES SETQ'D- 
+      FUNCTIùó© ‡ALLEDõ¨*H¡OPT îñH A  CALù‘b …Y- 
+ñ¢†ŠTHNOFAIL
+
+  ô ©YPE- ø¶(RA
+   ôA¥GUMENTS- THX 
+      FUNCú’gÎ§ CALLø±     ô!Á™LED Bû+P
+
+îñU$NŸT
+
+      TYPE- FEXPR 
+     ôiG«ù±gT§- THAôE A    FúQb ­ARIABLES- THEXPôE A    FúQb ­ARIABù‘i §ETQ'Dõ¨*H‹XP 
+ô A FUNCú’gÎ§ CALLø±       CALLED BY- 
+
+
+îñU$N­
+
+ ô ATYPE-ô¢Ø¡R 
+ ô AARGUMø³ªS[ X 
+      FUNCú’gÎ§ CALLø± ©HV1 îñH A  CALLED BY- 
+
+
+
+THORñ¢†ŠA     ú–hE[ FEXPúHŠA     ø4£Õ›ENTS-ô$AA
+      FREE VARIABLES- THTREEô$E±úŠA     øÔ¢ÅAVARIAøS"ÓASETQ'D- THEXP Tù)E‹ 
+  ô UNCTIùó© ‡ALLEDõ¨*H¡USH îñH A  CALù‘b …Y- 
+ñƒE
+THORF
+
+      TYPE- EXú     ôiG«MENTSõ¨ŠA     øÕgC©IONS øpfL‹D- THOR2 
+    ô!Á™LED Bû+P
+
+îñU$O¥T
+
+      TYPE- EXPR 
+ ô AARGUMø³ªS[ 
+  ô REE Vø4¤Á…LES- ú’+A™UE 
+      FREE VARIABLES SETQôñ ñH A  FUNøu$ÏS CALù‘b-ATHPOPT 
+      øpfL‹D BY-ôE
+
+Tùé2
+  ô ©YPE- ø¶(RA
+   ôA¥GUMENú”Ö ¡ 
+      FREE VARIABLES- ú’*R‹E THEû     ô©E‹ VARIø0¦E§ SETQôñ ©HEXP 
+      FUùÐêIŸNS CAù“"Ä[ THPOú      CALLED BY- THCONDF ú’'Ò 
+
+ñ¢†Š©HPOPTñ¢†ŠA     ú–hE[ EXPRôE A    ARGUMENTS- 
+      FREE VAúR`Â™ø´Ö ©HTREEôE A    FúQb ­ARIABLES SETQ'Dõ¨*H©REE îñH A  FUNøu$ÏS CALù‘b-A
+   ôCƒLLED øVV ©HAMONøñT‘ANDT THAPPLY1 THASSERTF TùiÓ‹RTT îñH A     ô A   THøT Î‡HUN TùiA§EF THERASET THFø2f? THFAù3ÔA
+   ô A         THFINDF THFINDT ú’#ÏƒLF THøóàÌ© THMEútàÇ‹F 
+ ô A     ô A THMESSAGET THMUNGF THMUNGT THùô™ ©ùéTATHPROøðP     ô A       THREMBINø‘T‘REMBIùÑ* ©HSUCCø±b ©HTAGFô$TƒGT 
+ô A     ô A  THUùÑ'ÆATHUNDOT THVAL 
+
+
+
+THPúRgTe
+
+ ô ATYPE-ôlP¥ 
+  ô ƒRGUMEùÕ)­AX 
+      FUNCTù3çSACALLEø‹P     ôàÌ™ED BY- 
+
+
+
+THPROG
+îñH A  TYPø«PF‹XPR îñH A  ARGú³bÎ©S- THø(ŠA     FREE VARIABLES- THTREE 
+ô Aô©E‹ VARIø0¦E§ SETQôñ ©HTREE 
+      Fú³¡Ô“ONS Cø3&E‰- THBù3¢ ©HPUSHô$P¥OGA îñH A  CALù‘b …Y- 
+ñ¢†ŠTHPROGA
+
+      TYPE- Eû)     ô ÒUMENTúkP     ôêH‹R BOUùÑVƒRIABLES X 
+   ôF¥EE VAúR`Â™ES- TùlPATHVALUE THTREE 
+      FRø±PVƒRIABLø´ÐS‹TQ'D-ô$E±P 
+ ô AFUNCTù3çSACALLED- THPOPT 
+      CALLED øVV ©ùhP™Y1 THøÒgDATHMESúpcÅ THPROG THPROGTôE
+
+Tù)OF
+
+ô A TYPEõ¨"Ø¡R 
+ ô AARGUMø³ªS[ 
+  ô UNCTIONS CALLED- THBRANCHú³     ôàÌ™ED BYõ¨Š
+
+ú’(RŸGT
+îñH A  TYPE- EXPR 
+ô A ARGUù±gT§- 
+ ô AFUNCTIONS CALLED- THBRANCù*H¡ROGA ñ¢ A   CAù“"ÄABY- TùêÃ‡EED îñCE
+THPURE
+
+      TYPE- EXPR îñH Aô ÒUMENTúkPX± 
+  ô ŸTHER BOUND VARIø0¦E§ Y 
+ô A FUNCú’gÎ§ CALLø± ©HVAR ñ¢ A   CAù“"ÄABY- TùiÓc 
+
+
+
+THPUSH
+
+     ô,Ð‹- MACúSÐ     ôiG«MENTSõ¨      ô#UCTIONS CALLED- ñ¢ A   CAù“"ÄABY- TùfÏG THAND THAPPLY1 THASS1 Tù¤Î‰ THCOùÑT‘DO 
+ô A     ô A  THFø2f?ATHFIND THGOAL THMATCH1 THMESSAøñPT‘ù±iÓƒGEF îñH A     ô A   THOR THPROG ú’(U©PROP ú’)E›PROP ú’)P™ACA Tù¨LƒCAS îñH A     ô A   THúT&A‡D THRPLACDS THSETQ THTAG ñ¢†Š
+THújP¥OP
+îñH A  TYPø«PE±PR 
+ô A ARGUMENTS- ATOô ÌAIND îñH A  FREø¨+A¥IABLES- THTREE 
+      FRø±PVƒRIABLø´ÐS‹TQ'D-ô$T¥EE 
+ô A FUNCú’gÎ§ CALLED- THPUSH 
+      CALLEDô¬­Aú’ Ä‰ 
+  ô UNARGô Ò“ABLES 
+       ô AFREE øÕgC©IONALúkPP«TPROPö(Š
+
+ú’)EƒD
+
+ô A TYPEõ¨"Ø¡R 
+      ARGUMENTS- 
+  ô ŸTHER øSêÎ‰ VARIø0¦E§ CHARôE A    Fú³¡Ô“ONS CALLED- 
+ ô ACALLEøˆ!Y[ 
+
+ñ¢†Š©HREMBINDF
+
+      TYPE- ø¶(RA
+   ôA¥GUMENú”Ö     ô#R‹E VARù0aL‹S- THALIST THTREE 
+      FREEô Ò“ø0¦E§ SETQôñ ©HALISúˆŠA     FUNCTIONS øpfL‹D- THúèTA
+   ôCƒLLED øVV 
+
+ñ¢ªH¥EMBINø•Š    ô*Y¡E- EXPR 
+      ARGUMENTSõ¨ŠA     øÔ¢ÅAVARIAøS"Ó[ THALù4ê ©HTREEô$VƒLUE 
+      FREø¨+A¥IABLEúh)Å©Q'D- ú’ Ì“ST 
+      FUNCTIONS CALLø± ©HPOPTôE A    Cø3&E‰ BY- ñ¢†
+
+Tù¢ÍŸVE
+
+      TYPE- EXPR 
+     ôiG«ù±gT§- THBôE A    Oú’"ÒABOUND VARIABLESô$Bc THWHô$N THALô$O THBSô$F§T 
+ ô A     ô A     ô A  THFSTP THFOO 
+      FUùÐêIŸNS CAù“"Ä[ THREù¬P     ôàÌ™ED BYõ¨*HƒSS1 THASSERTF îñCE
+THRø³hRŸP
+
+ô A TYPE- EXPR 
+      ARGUMø³ªS[ ATO ù3¢     ô#R‹E VARù0aL‹S- THú”¢ÅA
+      FREE VARIABLES SETQ'D-ô$T¥ø±P     ôªÎ‡TIONSôàÌ™ED- THPUSH 
+  ô ‡ALLEDô¬­A
+
+îñCET‘REM1îñCE A    Tû4"­AEXPR ñ¢ A   ARøõfÅTS- THB 
+      OTHER BOUùÑVƒRIABLø´ÐT‘A THSúÈ*Hƒ1 THAöH*Hƒ3 THAöˆ*Hƒ5 THONE 
+     ô A     ô A     ôT‘PC 
+      FREE VARIABLESõ¨*HF THFúuT‘WH THø3T‘FSTP ú’!SATHON ñ¢ A   FREE VARIABLES SETQ'D- THNFôE Aô UNCTIùó© ‡ALLEDõ¨*H…A THBAP 
+     ôàÌ™ED BYõ¨*H¥EMOVEôE
+
+Tù¢Ó©RICTîñCE A    Tû4"­AFEXPRôE A    ARGUMENTS- L 
+      øÔ¢ÅAVARIAøS"Ó[ THALù4ê     ô#R‹E VARù0aL‹S SETQ'D- 
+   ôF«NCTIOùÔÐCƒLLED-ô$GƒL 
+      CALLED BY- 
+
+ñ¢†Š©HRETUúS†Š    ô*Y¡E- FEû)     ô ÒUMENTS- X 
+      FUNCTIONS CAù“"Ä[ôE A    Cø3&E‰ BY- ñ¢†
+
+THRPLACA
+îñH A  TYPø«PE±PR 
+ô A ARGUù±gT§- X YôE A    Oú’"ÒABOUNDô Ò“ABLES THML 
+      FREE Vø4¤Á…LES- ú’*R‹E 
+ ô AFREE úÐiIƒBLES úqjQOD- THTREE 
+   ôF«NCTIOùÔÐCƒLLED-ô$R¡LACAS THPUSH 
+      CALLø±B³- 
+îñCETHRPLø0àÓ
+  ô ©YPE- ø¶(RA
+      ARGUMENTS- X Y 
+     ô©E‹ô Ò“ABLESõ¨*H›L 
+ ô AFREE VARIABLES úqjQOD- THù³     ôªÎ‡TIONSôàÌ™ED- Tù*Ó‘ 
+  ô ‡ALLEDô¬­ATHMATCH2 THRPLACA THSETQ ñ¢†Š
+THúT&A‡D
+
+ô A TYPEõ¨"Ø¡R 
+ ô AARGUMENTS- X Y ñ¢ A   OTùi …OUND úÐiIƒBLES THML 
+      FREE VAúR`Â™ES- Tù)E‹ 
+  ô REE Vø4¤Á…LES Søµ(§‰- THTREE 
+      FUNCTIONS CALù‘b-Aú’)P™ACDS ú’(U§H 
+ ô ACALLED BY- 
+
+ñ¢†Š©HRPLAøq)
+   ôT³PE- Eû)     ô ÒUMENTúkPXAY 
+ ô AFREE VARIABLES- THML 
+  ô REE Vø4¤Á…LES Søµ(§‰- THMùˆŠA     øÕgC©IONS CALLED- THúiÈA
+   ôCƒLLED øVV ©HMATCH2 THRPLACD 
+
+
+
+ú’)Å›I
+
+ô A TYPEõ¨"Ø¡R 
+ ô AARGUMø³ªS[ 
+      FUNCTIONS CALLED- 
+ ô AøpfL‹D BY-ôE
+
+ú’)Å©Q
+
+      TYPEõ¨#E±PR 
+ô A ARGUù±gT§- THLö(ŠA     ùõ$E¥ BOUNøˆ+A¥IABLEúh*H›L THL 
+      FREE VARIABù‘i­ATHTREø¨*H­ALUE ú’ Ì“ST 
+ô A FREEô Ò“ABLES SETQ'D- Tù Ì«E THTúQb     ô#UCTIONS CALLED- THPUSH THRú ÃƒS THSøðf ©HVAL ñ¢ A   CAù“"ÄABY- îñCE
+THSGAL
+
+      TYPE- EXPR îñH Aô ÒUMENTúkPXA
+   ôO©HER BOUND VARIAøS"ÓAY 
+ ô AFREE úÐiIƒBLES-ô$A™IST îñH A  FREø¨+A¥IABLEúh)Å©Q'D- 
+      FUNCTIONS CAù“"Ä[ 
+  ô ‡ALLEDô¬­ATHSETú(*H­SETQ ñ¢ A   FUNARG VARIAøS"ÓA
+   ô A    FúQb UNCTIONALS- SASSQ 
+
+
+îñU$S«CCEEDñ¢†ŠA     ú–hE[ FEXPúHŠA     ø4£Õ›ENTS- THA 
+      OTHER BOUND úÐiIƒøS"ÓATHX îñH A  FREø¨+A¥IABLES- THBRANCù*H©REE TùaRƒNCH TùfI§T 
+ ô AFREE úÐiIƒBLES úqjQOD- THø3$Ó© THABRANCH THBRANCH 
+   ôF«NCTIOùÔÐCƒLLED-ô$PŸPT THú§Ç© 
+  ô ‡ALLED BY- 
+
+îñCET‘TAE
+ñ¢ A   TYúV ‹XPR 
+      ARGUMENTS- XXôE A    Oú’"ÒABOUNDô Ò“ABLESôYA
+   ôF¥EE VARIABLES- THXX TYPE THX THû,PT‘û(ŠA     øÔ¢ÅAVARIAøS"ÓASETQ'D- THY THYö(*H±X 
+ ô AFUNCTù3çSACALLEø‹PT‘MATCHú     ôàÌ™ED BYõ¨*HƒSS1 
+
+
+
+THTAG
+
+   ôT³PE- Fø¶(RA
+   ôA¥GUMENú”Ö ™ 
+  ô REE VARIABLES- ú’*R‹E 
+ ô AFREE úÐiIƒBLES SETQ'D- THTREE 
+   ôF«NCTIOùÔÐCƒLLED-ô$P«SH 
+ô A CALLø±B³- 
+
+
+
+THTAGF
+
+      TYPEõ¨"Ø¡úHŠA     ø4£Õ›ENTS-ôE A    FUNCTIONS Cø3&E‰- THPùô*     ô!Á™LED Bû+P
+
+îñU$TƒGT
+îñH A  TYPø«PE±PR 
+      ARGUMENTS- 
+ ô AFREE úÐiIƒBLES-ô$VƒLUE îñH A  FREø¨+A¥IABLES SETQ'D- ñ¢ A   FUùÐêIŸNS CAù“"Ä[ THPOPT 
+      CALLED BYõ¨Š
+
+ú’*R«E
+
+ô A TYPEõ¨"Ø¡R 
+ ô AARGUMENTS- X 
+      FUNCTIONSôàÌ™ø±     ô!Á™LED Bû+P
+
+
+THTRY
+
+ô A TYPEõ¨"Ø¡R 
+ ô AARGUMø³ªS[ X 
+ô A FREEô Ò“ABLESõ¨*Hµ1 THZ THA2 THY1 THY 
+   ôF¥EE VAúR`Â™ES SEú”SÄ[ THY ú’,±ATHZ Tù˜       FUNCTIONúh!Á™LED- ú’&Á©CHTB ú’&Á©CHDB 
+      CALLED BY- TùçÁ™ 
+îñCETHTRYö#E     ô,Ð‹- EXPúHŠA     ARGUMENTS- 
+      OTHER øSêÎ‰ô Ò“ABLESô$EŸREM TùÐT‘Z THY THX 
+   ôF¥EE VAúR`Â™ES- Tù)E‹ THOLù4ê ©HALISúˆŠA     øÔ¢ÅAVARIAøS"ÓASETQ'D- THOLIST 
+      Fú³¡Ô“ONS Cø3&E‰- THMø5!Èc THAPú,±A
+   ôCƒLLED BY- THGOALøÈŠ
+
+ú’*Î‰OF
+îñH A  TYPE- EXPR 
+      ARGUù±gT§- 
+ ô AFREE úÐiIƒBLES-ô$T¥EE THûT‘ALIST 
+      FREE VARIABLES Søµ(§‰õ¨*H©REE TùfI§T THXûŠA     FUNCTIONS øpfL‹D- THúèTA
+   ôCƒLLED øVV 
+
+ñ¢ªH«NDOTîñCE A    Tû4"­AEXPR 
+      ARGUMENTS- îñH A  FUNøu$ÏS CALù‘b-ATHPOPúˆŠA     øpfL‹D BY- 
+
+
+
+TùgIŸN
+
+ô A TYPEõ¨"Ø¡R 
+      ARGUMENTS- L1 LöHŠA     ùõ$E¥ BOUNøˆ+A¥IABLEúh*H± 
+  ô UNCTIONS CALLED- 
+      CALLEøˆ!Y[ô$MƒTCH2 ñ¢†Š
+THú³¤Ñ«E
+
+      TYPEõ¨#E±PR 
+ô A ARGUù±gT§- THAôE A    Oú’"ÒABOUNDô Ò“ABLESô      FREE VARIABLES- THAù’iÔATHXX ñ¢ A   FRø±PVƒRIABLø´ÐS‹TQ'D-ô$X± 
+      FUNCTIùó© ‡ALLEDõ¨*H­AL 
+ô A CALLED BY- 
+      FUNARøè+A¥IABLEúhŠA     ô A FREEôªÎ‡TIONAù”Ö §ASSQ 
+
+
+
+THURPLACA
+
+   ôT³úV EXPR ñ¢ A   ARøõfÅTS- L 
+      Fú³¡Ô“ONS Cø3&E‰- 
+ ô ACALLEøˆ!Y[ 
+
+ñ¢†Š©HURPLø0â
+   ôT³PE- FEXPR 
+      ARGUMENú”Ö ™ 
+  ô UNCTIùó© ‡ALLEDõ¨ŠA     øpfL‹D BY- 
+
+
+
+Tù†Š    ô*Y¡E- FEû)       ARGUMENTS- X 
+   ôF«NCTIOùÔÐCƒLLED-ô$Vc 
+  ô ‡ALLEDô¬­A
+
+
+
+THVAL
+
+      TYPE- Eû) ñH A  ARGú³bÎ©S- THø¶( ©HALIST 
+      ùõ$E¥ BOUNøˆ+A¥IABLEúh*H©REE Tù Ì«E THBúPgC‘ THOLù4ê     ô A                   THABRAùÐä ©HE THúÈŠA     øÔ¢ÅAVARIAøS"Ó[ THLEúÑf ©HTREE ^A THINF ú’&Å§SAGE ñ¢ A   FRø±PVƒRIABLES SETQ'D- ^A THLEVEùˆŠA     øÕgC©IONS øpfL‹D- THúèTA
+   ôCƒLLED BY- THAMONG THMATCH2 THMAúä1Aú’)Å©Q THUùÒhÕ‹ THVAúTÙ               ôT‘VARSUøTê ©HVSETú(Š
+
+ú’+A¥
+
+ ô ATYPE-ôlP¥ 
+  ô ƒRGUMENTS- X 
+      FUNCTù3çSACALLEø‹P     ôàÌ™ED BYõ¨*HINDT ú’&Á©CH2 THPURE 
+îñCETHVARúuaS©
+
+ ô ATYPE- EXPR 
+      ARGUMEùÕ)­ATHX îñH A  FREø¨+A¥IABLEúkPT‘ALISTô$VA
+      FREE VARIABLES SETQ'D-ôE Aô UNCTIùó© ‡ALLEDõ¨*H­AL THVARS2 
+  ô ‡ALLEDô¬­ATHASSö(*HINDT ú’#ÏƒL THGùðfTA
+
+îñCET‘VARS2ñ¢†ŠA     TYPE- EXPR 
+      AúQêÍ‹NTS- ûŠA     ùõ$E¥ BOUNøˆ+A¥IABLEúh        FREE VARù0aL‹S- THø3$Ó© THV ñ¢ A   FREE VARIABLES SETQ'D-ôE A    Fú³¡Ô“ONS Cø3&E‰- THVø3T‘GAL îñH A  CALLED BY- THFINDT THVARSUBSúˆŠñCETHVSEú”FŠ    ô*Y¡E- FEXPR 
+    ô ÒUMENTúkPT‘A 
+ ô AOTHERô§ÕD VARù0aL‹S A îñH A  FREø¨+A¥IABLES- THVALUE THALIST îñH A  FREø¨+A¥IABLEúh)Å©Q'D- ú’+A™UE 
+ô A FUNCTIONS CALLø± ©HSGALô$VƒL 
+ ô ACALLED BY- 
+
+
+
+THV1
+ñ¢ A   TYúV ‹XPR îñH A  ARGú³bÎ©S- X ñ¢ A   FREE VARIABLES- THXX THALISúˆŠAô AFREE úÐiIƒBLES úqjQOD- THXX 
+     ôªÎ‡TIONSôàÌ™ED- îñH A  CALù‘b …Y- THùÕT‘V 
+ ô AFUNARøè+A¥IABLES 
+            FREEôªÎ‡TIONAù”Ö §ASSQ ñ¢†
+
+îñCEINDEXô§ÒATHE INDEX 
+
+îñH A  EVLù4Ð3A     ô A       THFIND 10         ô A  THRø°b c8    ô A     ôE A    TùbDA3                  THFINDF 10 ô Aô A    Tù¢Í…INDF ö. A        
+     ô$A›ONG 3ô A     ô A THFIùÑ* c1    ô A     ô$R‹MBINDúˆ¸A          
+      THAMONGøÈ A     ô A   THøÓ*Ó‘ 11  ô A     ôT‘REMOVE 18      ô A  
+ ô ATHANDôÐ A               THGAL 11  ô A     ô ATHREMú§ÐA19   ô A    îñH A  THANDF 3                 THGùè±Aô A     ô A  THRø³X c9              ôE A    TùgD© 4   ô A     ô ©HGOALôX A     ô A    Tù¢Ó©RICT 19           
+     ô$A¡PLY 4ô A     ô A THGOø3# c2    ô A      THRETURN ö.P A     ô A
+   ôT‘APPLY1 4               THøóàÌ© 12  ô A     ôT‘RPLACø(¹A     ô A  
+      THASSERT 4          ô Aú’$Î“T 12 ô A     ô ATHRPLACAS 20   ô A    îñH A  THAútâÒ©F 4  ô A     ô*H“P 12 ô A     ô A  THRPLACD 20            ôE A    TùiÓ‹RTT 5ô A     ô ©HMATCù²A              Tù¨LƒCDS 2ö A     ô      THASS1 5           ô A THMAúäD… 13  ô A     ô$S‹MI 20ô A          
+      THASVAL 5   ô Aô A   THù°jC‘LIST ö,Ð A        THSETQ öL A     ô A  
+ ô ATHBA ö¨ A     ô A     ú’&Á©CHTB ö,Ð A          THSGAL 21      ô A    îñH A  THBø46A     ô A     ô*H›ATCH1 13       ô A  THSú°áÅ‹D 21 ô A      
+      THBIND 6   ô A     ô ©HMATCù1g     ô A    Tù ÅA21                
+      THBIö( Aô A     ô A THMEútàÇ‹ 14            ô$TƒG 21 ô A     ô A
+   ôT‘BKPT öÈ A     ô A   THù±iÓƒGEF 14            THTAGF öL A     ô A  
+ ô ATHBRAùÐä m     ô A     THMESSAGETôZ A     ô ATHTAGúˆ2A              
+      THBúPgC‘UN 7 ô A     ô*H›UNGF ö- A     ô A  THTRUE 22               
+  ô ©ùäE‡K 7  ô A     ô ©HMUNGT 14      ô A    Tù)YA22   ô A     ô     ô$CŸND 7 ô A     ô A THNOFAIL 15             ô$T¥Y1 22ô A     ô A
+   ôT‘CONDFôÐ A             THùÓê c5    ô A     ôT‘UNDOF 23              
+ ô ATHCONø•7A     ô A     ú’'VA15   ô A          THUNDOT 23          ô ñH A  THDø5  q     ô A       THOR 15 ô A     ô A  THUùÒgÎA23   ô A     ôE A    Tù' q     ô A         THORF 15        ô A    TùgI£UE 23ô A     ô     ô$DŸB 8            ô A THORúˆ¶A     ô A      THURPLACA 23       ô A
+   ôT‘DO1 8ô A     ô A   THùô™ c6                 THURPLACD 24ô Aô A  
+ ô ATHDUMú A               ú’(O¡T 16 ô A     ô ATHV 2öˆ A     ô A    îñH A  THEúPiÅA9                THPRINT2ô[ A     ô A  THVø32i     ô A     ôE A    THERASEF 9 ô A     ô ©HPROGô[ A              THVAR 24   ô A     ô     ô$E¥ASET ÷( A     ô A THPROGA 17               THVAúTêÂ§úˆ4A     ô A
+   ôT‘FAIL 9         ô A   THú§Ç 17  ô A     ôT‘VARS2ôš A     ô A  
+ ô ATHFAIL? 9                ú’(RŸGT 17ô A     ô ATHVSEú”P2k     ô A    
+      THFø2f? 10  ô A     ô*H¡URE 17                THVö(5A     ô A     ôE A    Tù É™?T 10ô A         THPUSH 17            ô Aô A     ô A     ô      THFINALIZø¨°A     ô A THPUú”)O¡ 18  ô A     ôE

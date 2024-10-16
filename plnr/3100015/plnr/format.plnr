@@ -1,0 +1,43 @@
+;;;PLNR FORMATS
+;;;
+;;;12. thconse-form - expression initially ground as a defun up
+;;;to and including the argument list.  The calling pattern is
+;;;then ground as a block on the next line.  GRIND then skips a
+;;;line and grinds the body of the definition as a prog.  For
+;;;example,
+;;;
+;;;  (THCONSE EQSEG1 (A B C D E F) 
+;;;	   (SEG $?A $?B = SEG $?D $?E)
+;;;
+;;;	   (THGOAL (TRI $?A $?B $?C = TRI $?D $?E $?F)))
+;;;
+;;;THCONSE, THANTE and THERASING are ground in this format.
+
+(DECLARE (SPECIAL PROG? ARG *FORM *PREDICT L)
+	 (*FEXPR FORMAT))
+
+(DEFUN THCONSE-FORM NIL 
+       (SETQ PROG? T)
+       (DEF-FORM)
+       (REMSEMI)
+       (INDENT-TO ARG)
+       (PPRIN (CAR L) 'BLOCK)
+       (REMSEMI)
+       (TURPRI)
+       (TURPRI)
+       (INDENT-TO ARG)
+       (SETQ *FORM (COND (*PREDICT 'FORM2) (ARG)))
+       (SETQ L (CDR L)))
+
+(SETQ GRINDPROPERTIES (CONS 'THEOREM GRINDPROPERTIES))
+
+(FORMAT THV (READMACRO (36. 63.)))
+
+(FORMAT THNV (READMACRO (36. 95.)))
+
+(FORMAT (THGOAL THASSERT THERASE) LAMBDA-FORM)
+
+(FORMAT (THPROG) PROG-FORM)
+
+(FORMAT (THANTE THCONSE THERASING) THCONSE-FORM)
+

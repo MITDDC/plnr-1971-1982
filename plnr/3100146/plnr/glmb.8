@@ -1,0 +1,161 @@
+;-*-LISP-*-
+
+;  GENERALIZED LAMBDA
+;     MICROPLANNER done a different way, sort of.  This also has some relation
+;  to the way CONNIVER did MICROPLANNER type things, however, hopefully is considerably
+;  more winning.
+
+;The following section considers the examples given at the beginning of the microplanner
+;manual, in order.
+
+;(1)  (THASSERT (HUMAN TURING))
+;(2)  (THCONSE (X) (FALLIBLE $?X)
+;         (THGOAL (HUMAN $?X)))
+
+;(1) is a "simple assertion" but (2) is a loop, sort of, ie loop over all
+;  (FALLIBLE xxx) things, and try (HUMAN xxx) for each of them.
+
+;  a couple of elementary examples, which unfortunately, don't illuminate much.
+;(THGOAL (FALLIBLE TURING) $T) 
+
+;(THPROG (Y) (THGOAL (FALLIBLE $?Y) $T) (THRETURN $?Y))
+
+;(THASSERT (HUMAN SOCRATES))
+;(THASSERT (GREEK SOCRATES))
+;(THASSERT (HUMAN NEWTON))
+
+;(THPROG (X)
+;(3)	(THGOAL (FALLIBLE $?X)$T)
+;(4)	(THGOAL (GREEK $?X))
+;	(THRETURN $?X))
+
+; this is really a doubly nested loop.  (the fact is somewhat concealed because
+;$?X will probably be assigned by the time we get to statement 4).
+
+;now we come to the key question:  why does MICROPLANNER require backtracking?
+; (or more exactly, why does not the usual restore-the-previous-binding lambda-binding
+; type backtracking suffice for MICROPLANNER?)  The claim is it is because the loops
+; are nested wrong.  The further claim is that if a way can be worked out to
+; dynamically renest the loops, this will not only eliminate the backtrack
+; mechanism of MICROPLANNER but will also facilitate heuristic (ie non-exhaustive)
+; searches through the search space defined by these nested loops.
+
+;  Why MICROPLANNERs loops are nested wrong:  basically because it insists
+;on "returnning" on success.  Instead it should call deeper, just like
+;any nested loop structure.  Returning should be done only when a "final answer"
+;is computed, or it is decided to give up (ie FAIL).
+:  However, calling deeper has its own problem, namely that final nesting of
+;the loops does not corespond to their lexical nesting.  That is to say,
+;instead of the MICROPLANNER 
+;    "find me a (FALLIBLE x).  Then I'll see if that one is (GREEK x).  If not, 
+;    statement 4 above will fail, causing us to generate another (FALLIBLE x), etc"
+
+;we want
+;    "here is a loop (GREEK x).  Generate all (FALLIBLE x), and for each of them
+;execute my loop (in the correct environment, etc)."
+
+;thus the loop (GREEK x) gets dynamically relocated.  Clearly, we need a 
+;full-funarging type mechanism to cause the (GREEK x) to reference the right
+;variable environment.  The basic mechanism of the lisp machine closure mechanism seems right
+;for this.   However, to avoid unnecessary CONSing, we need a few fiddles.
+;We need to have each loop in the form of a separate lisp function.  However, we
+;want to create one variable environment, and use it for the bunch of functions.
+;Therefore, we want (CLOSE-VARIABLES '(xx yy)) which is just like CLOSURE except
+;in takes no function.  Then we have 
+;  (FUNCALL-ENV <var-env> <function> <args>)  which sets the variable
+;environment, then calls <function> on <args>. (For present purposes, <function>
+;will always be of no args).
+
+;so our program segment above is translated:
+   ;a couple of notes:
+   ; below we have changed from (THGOAL (X Y)) to (THGOAL-2 X Y <var-env> <continuation>)
+   ;  also from $?X to (BINDING-CELL 'X).  (BINDING-CELL 'X) evaluates to the
+   ;  immediate contents of the internal value cell of X.  In this case, thats going
+   ;  to be a DTP-EXTERNAL-VALUE-CELL pointer to the current X-V-C of X.
+   ;  When this is passed as an
+   ;  argument to THGOAL-2, the current external value cell of X becomes the external
+   ;  value cell of <whatever variable was used in the definition of THGOAL-2>.
+   ;  This achieves the desired variable linking behavior:  When THGOAL-2 finds a frob
+   ;  and sets its variables, the original X will be set.  Then when THGOAL-2 calls its
+   ;  continuation, the continuation will find that X is no longer UNASSIGNED, etc.
+
+(LET ((X 'UNASSIGNED)
+      (SELF-ENV NIL))
+     (SETQ SELF-ENV (CLOSE-VARIABLES '(X SELF-ENV)))
+     (*CATCH '<GENSYM>
+        (THGOAL-2 'FALLIBLE (BINDING-CELL 'X)
+		  SELF-ENV
+		  (FUNCTION (LAMBDA NIL (THGOAL-2 'GREEK (BINDING-CELL 'X)
+						  SELF-ENV
+						  (FUNCTION (LAMBDA NIL 
+							      (*THROW '<GENSYM> X) ))))))))
+
+;Clearly, we need a "compiler" to turn the original MICROPLANNER code into the above
+;cruft....  note that <GENSYM> above is a particular static gensym, generated during
+;the compiling process.
+
+;  One way to think about this hack of passing a DTP-EXTERNAL-VALUE-CELL-POINTER frob
+;is that one is "coupling out" the variable from the called function into the
+;calling function, and at the same time renaming it in the calling function's environment.
+
+;Here is how we "compile" the THCONSE
+
+(DEFUN THCONSE-2-n (VAR-ENV CONT P1 P2)
+   (COND ((EQ P1 'FALLIBLE)
+	  (THGOAL-2 'HUMAN (BINDING-CELL 'P2) VAR-ENV CONT))))
+
+;and here is a sample THGOAL-2
+
+(DEFUN THGOAL-2 (E1 E2 VAR-ENV CONT)
+   (DO X TWO-ELEMENT-ASSERTIONS-LIST  (CDR X) (NULL X)
+       (COND ((EQ E1 'UNASSIGNED)
+	      (SETQ E1 (CAAR X))
+	      (COND ((EQ E2 'UNASSIGNED)
+		     (SETQ E2 '(CADAR X))
+		     (FUNCALL-ENV VAR-ENV CONT)
+		     (SETQ E2 'UNASSIGNED))
+		    ((EQ E2 (CADAR X))
+		     (FUNCALL-ENV VAR-ENV CONT)))
+	      (SETQ E1 'UNASSIGNED))
+	     ((EQ E1 (CAAR X))
+	      (COND ((EQ E2 'UNASSIGNED)
+		     (SETQ E2 '(CADAR X))
+		     (FUNCALL-ENV VAR-ENV CONT)
+		     (SETQ E2 'UNASSIGNED))
+		    ((EQ E2 (CADAR X))
+		     (FUNCALL-ENV VAR-ENV CONT))))))
+   (DO X TWO-ELEMENT-CONSEQUENTS-LIST (CDR X) (NULL X)
+       (FUNCALL (CAR X) (BINDING-CELL 'E1) (BINDING-CELL 'E2) VAR-ENV CONT)))
+
+;Unfortunately, the ugliness with the UNASSIGNEDs is necessary because if
+; we tried lambda binding it, it would bind the internal value cell instead
+; of the external one, as desired.  To flush that, we would need
+; (BINDPUSH-ACTIVE-BINDING-CELL '(var-list) <exp>),  in which case THGOAL-2 could become:
+
+(DEFUN THGOAL-2 (E1 E2 VAR-ENV CONT)
+   (DO X TWO-ELEMENT-ASSERTIONS-LIST  (CDR X) (NULL X)
+       (BINDPUSH-ACTIVE-BINDING-CELL '(E1 E2)
+          (PROG NIL 
+		(COND ((EQ E1 'UNASSIGNED)
+		       (SETQ E1 (CAAR X)))
+		      ((NEQ E1 (CAAR X))
+		       (RETURN NIL)))
+		(COND ((EQ E2 'UNASSIGNED)
+		       (SETQ E2 (CADAR X)))
+		      ((NEQ E2 (CADAR X))
+		       (RETURN NIL)))
+		(FUNCALL-ENV VAR-ENV CONT))))
+   (DO X TWO-ELEMENT-CONSEQUENTS-LIST (CDR X) (NULL X)
+       (FUNCALL (CAR X) (BINDING-CELL E1) (BINDING-CELL E2) VAR-ENV CONT)))
+
+;Which, however, might be somewhat less efficient than the above.
+
+;More efficiency would clearly be obtained by having THGOAL-2 call one of four
+;subfunctions, according as to E1/E2 were ASSIGNED/UNASSIGNED.
+
+;Also, no doubt, more efficiency would be obtained by splitting TWO-ELEMENT-CONSEQUENTS-LIST
+;into a number of lists keyed by the constant symbols in the consequents.
+
+;Well, it looks like the kludge works pretty well and eliminates backtracking,
+; but it doesnt really have the dynamic loop renesting properties desired.
+

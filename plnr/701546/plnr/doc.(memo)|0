@@ -1,0 +1,301 @@
+Ò¢Üä
+
+Ò¢§…ìı»*hÀ Micr˝Ë(l√˝€≤ÚAPrimi˛ö{eÁÒ¢ÜäÒJî†´˙ ‘ã TO THFLUS˘E	Q˙í#L´SH) = (THFLUSH ˙í ”ßERTION THANTE THCONSE THERASING)
+
+
+*)Ù
+*H•¯¥ÍRìCT <v¸<¥·≈le> <lisp funct˝;˜ c> <li˛|fÎnction 2> ...)ÓÒBjH•¯¥ÍRì¯uaŸ˝õ˚ÛAone to restrict a PL¯3ßE• vari¸8∂eA˛{–t—at
+it will only match objects which sat˝<ÛyA˛ö2†ô˘4Ë Õ˛ª±Ù”ons named in
+the THRESTR˘0Í Átatement.  For example, consider
+	(THGOAL (AGE MOTHER ($R $?X NUMBERPı*Tç$R is an abbreviation, wh˝8Ù Àˇ0Ó…˛h:oATHRES˙î§√©. In this ¸æ0Ì·le,
+$?X will o˝€<†€atch numbe˛\◊ A˘ÿzuÂ¸;6yY the function named must be
+aÙ∫Ó«tion of one var˝8qlÀ.  Of course, we could ha˛ŸPaAlambd¸#EeÒpress˝;˜ ”nstea¸à7ÊAthe f˛ª±Ù”˝˚ên√me, a˛h4Ó(THG˘f Q$?Y I˙h †QÙîê?A(LAMBDA (X) (ME˘¥PXA'(DOGÙ‡‘AHACKE˙JT©S))
+Also note t˝z ÂatherÙ4a›ÙPv√riable, we haveÙPqÎ¸º˙iﬂn mark
+inside ˛ö2†IR expression.  The n¸ΩrÀsult ˝<–t—¸=t—¸®?EÙÙÏŸ only
+mat¸zDüG, CAT, or HACK¯¥ó AHowev¸ºñ ”˛à2oÁen't get a˛|ÙÁ›¸πaAvalueÒ¢∞ÛA$?X w˝˝vdAin our first example.  WeÙÓAalso haveÓÒBT$• $_z MYPRE¯äPwhichÙ0ÛAthe expected re˛}vt]Ùä	In all our exa˝º6eÁÙ˜†Õ¸<êt—e restriction h¸<–bÀ¸ªÜä…eclared in our ¸˚ÏAstate˝πwt]  We ¸xw √lso crate the r¸º˙r”ctionÒ¢ªËÀn we decla˛YPv√riabl¸º–aÈ the begin˝;≥†ﬂ¸»0†È˝wÚÀm, or a THPROG,
+as in
+	(THPR˘Ò–(ÉÙ
+RAB HUMANP)C)
+		ı$GüAL ($?A SON OF $?B) $T))
+		..ı Fäìn thi˛h*H°˙S„ßÁ vari¸8∂eAbindings w¸®:ÛÀ B rather than Ùè· ﬂr $_Bı√E(©he pr¸π¥¯Awould have no m¸∏wi›g in ˛ö2†«˝˚∫eÒ˛à7ÊAa var˝8qlÀÒ¢∂iÁt.) It is also ˛˘Û”ble to use THRESTRIC˙à0ÛAa free standingÒ¢≥u›ction, so this last ˙í(Rü¯Ë1ÔÎld have been written
+	(THPROGÙ
+ †Ö C) 
+		(THRESTRICT ¯H$Uõ¯3®)ÒBD®©HGOALÙ
+?ÉÙÁŒA˘Òê$Ö)$T)ÓÒBDÆ].)
+	Once we restrict a variable itÙ˙aÛ˛h9eÁ˛ú¥„Èed un˛öv ”t
+go¸º–aÔay wh¸ªêt—e function who ¸[˙Ó…Ùz ”s left. AsÙÚ†Áhall ˛yr¨this has some inter¸º˙i›g conseque˝ÿÚÛ] 
+	At theÙwÌÀnt THGOAL is th¸®7ÓŸy functionÙÙi«h tak¸º–nﬂte
+o¸»9eÁ˛ú¥„Èions.Ù˜†ﬂne can THS¯µ(†√ restricte¸à;aÂiable to a value
+wh˝8Ù Ôould not satisfˇ(4ÙO˛h9eÁtrictions.  TheÙÌÀ goes for
+THAMONG.ÓÒBdÙAis po˛|Ù‚Ÿe to haveÓÒBTTë˙ß«A(A ($R B ORANGEP) C)
+		(THGOAL (OW˘»?É ($R Ùè· á˘4°’ôARP)))
+		...)
+which will actÙ4eAsame as
+
+
+
+
+
+
+			Ò"D†A PLNR PRIMITIVE˙h
+
+ÓÒBTTëPROG (A ($˙H! ü˙PgGãP CIRCULARP) C)
+		(˙í#œÉL (OW˘»?É $?B))
+		...)ÓÒPwoÈher intere˛}4Óœ caseÙyç	(THG˘f Q˘ıÁ ï¯0Â†Q$R $?¯H!…•¯ufA•P)) (˙í*”ã WHOHAS))
+where WHOHAS l˝˚ıÛAlike Ò¢Ñ®©˘ÁŒßE (F ¯ÍFäÒ*'◊ù $?F $?G)
+		(T˘Á¡ôÙ
+$Oô¯à?çÙ
+RA$?G SMALLPı*RTS)
+When we do t˝y†Ÿast T˘Á¡ôıà:hÀ item which matches $?G must satisfy
+bo˛öCìRCULA˙Ta›d SMALLP.  It is possibleÙ4aÈÙ4ÛA¸˚ÏAwill call
+another theore˝®;Ë”ch satisfies the goal wit˝˙ÙAassig˝⁄wgAÙè„†√
+value.  ˘9êt—is isÙ4eA¸xyÂAthen our f˝<πÙAgoal (OWN JACK...) will
+be satisfied without B ge˛ù4Óœ a value, ¸]z,A˛ö2†ÂestrictionÙÊ¡ôLP
+will s˛ò|†Ôith $?B, just as an assig˝Ÿr Ì¸;:ÂA˛˚˙Ï…Ù0ˆÀı»HÀnce it
+isÙ7ÛÁible ¸€˘ √Ù4eﬂrem n˝˝tﬂ assign a value to aÙ∞Ú”¸8∂eYÙ∫Ùmere˝ûPrÀstric˛à4ÙÁ range of possibilities.ÓÒCE*) (THDUMPÙ3iŸename1> <filena˝πY>A<devi¸y_ y˛ºÚÚ})
+	Dumps ˛ö2†Á˛òzeAof th¸®&È«˛[÷–ŸannerÙ˜ÚŸ¸àTë˙u ‘ã) int˝„Et—¸®9À¸zsiÀ¸à3iŸe.
+	ı$D´˘¥SÉ˙—PS©¯5"©Aı$FôUSH) (UREAD) (I˘–QSÒ¢¥ÛAa no ˝¸Ò¢ÜäUı(TëSTATE <indicator1> <indic¸=7Úe> ...Ù
+Fä˙¥ÓÈs tha˛à8aÂt of the state ˝˘êt—e Micro-PlannerÙ˜ÚŸd
+sp¸∏ÙÊ”ed by the ˝;≤i«atorsı√E	QTHSTATE TH¯4È≈•TION) = assertions in data bas¸®ä(THST¯5"†©˘ÁŒßE) = ¸{˜sÀquentÙ4eﬂrems curre˝›6yA¸<˘ÂÂted
+Ò**Hß˙êjEATHANT¯™P=A¸;∫e«¸π2ÓÈ theo˛YvÛA¸}yrÀ˝›6yAasserted
+	(THSTATE ˙í"“ÉSING)ÙPeÂ¸<ÙÓœ theorems curre˝›6yAasserted
+
+
+*) (THNOHAS˘A©˘Û_ yINDIC¯5'“c˜»IùDICAT˘Ùô>].. )
+	The patt¸º∑sA˝˘êm”cro-planner theorems and ¸<˘ÂÂtionsÙyeÒ\˙oÂ¸πi›Ù∫„◊ets h˛ª≥†ﬂn the atom˛h0·earin¸Ë4ÓAthe patter˝‹◊Atoms which areÙ≤ÚÛ common are notÙ≤ÚÛ useful for thi˛h8uÂ˛˘Â]Ò¢£oÂ example, suppo˛yPwÀÙÙÛ—¸πtﬂÙyÛÀ˛]t—e following fiv¸£Ep√ttern˛nÜä	A1:Ù
+%OëN IS A BOY)
+	A2: (JACK IS A BOY)
+Ò0Y∫A(MARYÙi†ÉÙ‰“ô)
+	Aˆéê(ïILL IS A GIRL)
+	A5: (WOO¯»$”A¯("Oèı#E"IS" and "¯(êaÂ¸®7oÈÙ2Ï·ful in distingu˝<Ùi›g any of theseÓÒXyÛÀrtion˛h3rﬂ˝®:hÀÙ˙hÀrs.  ˘=wﬂ˛ª2 Áave space as well asÒ¢Üä
+
+
+
+						   PLNR PRIMIT˘5¢”A3
+
+Ò¢Üä«omputation to t¸ª6 ·lanne˛H:h”˛kê ãxecut˝;≥ç	(THN˘Ú ”ë IS T˘i”ãRTION)
+	(THNOHASH A  THASSERTION)
+accomplishes this purpose.
+
+	One can be selecti˛ŸPi›Ù2ÏŸing planne˛H;ËÀre a parti¸}vaÂ
+ato˝®4ÛA˝€˙ Î˛ysuŸÙ∑ÚApattern ma˛òÙi›¸Ë8uÂ˛˘ÂÁı»T—is isÙ7ÓÀ by
+specifyingÙÙi«h of the f˝˝y Õollow˝;≥†Èypes ˝˘êp√ttern˛h:hÀÙzo€Ùyç˝€˙ ÎsefulÙw ”˝Ÿ2¯”ng: 
+	the patterns of 
+Ò"qÔ›˛yxıÀ˝›t—¸ª˘e€˛cE	¸;∫e«¸π2ÓÈÙ4eﬂremsÓÒBDÂÂasingÙ4eﬂrems
+		asserti˝˚πÆÒU4eA˛~wt√ˇ3oÂÙ4iÁ is to useÙwyA¸{ˆ‚”˝ÿziﬂ˝»7ÊAthe f˝˝y Õ˝˚6oÔing
+indic¸=7ÚÁ˜CE	©HCONSE, THANTE,Ù$E•¯4‰Œè, THA˙t‚“©ION 
+
+	For ex¸;xlÀ, (TH˘”‰AßH IS ˙í ”ß¯¥™IüN) in¸€˘mÁÙ6a›˝Ÿy ›ot
+to useÙ4eAatom ÙRi¢Aas a ˝wdŸ¸®7ÓA˛ö2†·¸=:eÂ˝»6·È¸z4ÓœÙÛasser˛öwÓÁÙw Ôhich ˝=iÁÙ∑ı›d.  It is ˛}4ÏŸÙyÂ… for pattern
+matching pu˛\7ÛÀs when it occur˛h4ÓAthe patterns ofÙ4eﬂ˛YvÛ]Ò¢Üäı$Nü˘i»A˜òzo€˜»*Há˘Û©≈ATHANT¯®*HãRASING THA˙t‚“©˘3Á)Acan
+be ab¸\≤ˆ”¸=2‰A¸<–(©HNOHASH <atom>) and is used when the atom that
+it is completely useless for pattern matching purposes. 
+
+
+*) THGOAL - (addition)
+	Normally, THGOAL does not evaluate its arguments.  However,
+there are two exceptions to this.  First of all, $E can be used to
+tell planner to thvaluate any expression.  For example, 
+	(THSETQ $?X '(HUMAN TURING))
+	(THGOAL $E$?X ) 
+will result in the pattern of the THGOAL statement being '(HUMAN
+TURING).  And secondly, in the special case where the pattern of the
+THGOAL statement is to be the value of a planner variable as in the
+the above example, $E is optional.  Thus,
+	(THGOAL $?X) = (THGOAL $E$?X)
+
+*) (THMATCH <exp1> <exp2>)
+	THMATCH matches the lisp value of its first argument against
+the lisp value of its second argument.  For example,
+	(THMATCH '(HUMAN TURING) '($_X $_Y))
+would succeed and result in $_X being bound to 'HUMAN and $_Y being
+bound to 'TURING.  if $_X were instead $?X, then THMATCH would
+succeed with $?X bound to 'HUMAN, providing $?X were previously
+either THUNASSIGNED or bound to $?X.
+	Failing back through a THMATCH is similar to failing back
+through a THGOAL.  Any variable assignments made by the match are
+
+
+
+
+
+
+						   PLNR PRIMITIVES 4
+
+
+
+undone and the variables are returned to their previous values. 
+	Note that THMATCH will not work properly if its inputs are
+themselves planner functions since planner is not corecursive with
+lisp.  For example, if HUMAN TURING is already asserted, the planner
+value of
+	(THGOAL (HuMAN TURING)) 
+is ((HUMAN TURING)) but its lisp value is NIL.  Hence,
+	((THMATCH (THGOAL (H T)) '(HUMAN TURING)
+will not work properly.  An explicit call to THVAL, however, will
+work:   
+	(THMATCH
+		(THVAL '(THGOAL (HUMAN TURING)) NIL)
+		'((HUMAN TURING)))
+
+*) (THUNIQUE <exp1> <exp2> ...) 
+	THUNIQUE is a state filter.  It causes failure if the list
+consisting of the values of its arguments has ever been computed by
+any previously executed THUNIQUE.  For example, a consequent theorem
+named THM1 can be prevented from being entered twice with the same
+input by making 
+	(THUNIQUE 'THM1 $?X1 $?X2 ... ) 
+the first statement of the theorem's body, where $?X1, $?X2, ... are
+the planner variables occurring in the theorem's pattern.
+
+*) (THFAIL? <predicate> <action>)
+	If failure backs up to this planner primitive and its
+predicate evals to true, it returns the eval of its action.  THFAIL?
+is useful as a computationally less costly form of THMESSAGE since
+it does not involve pattern matching against a message failure or
+thproging.
+
+*) (THERT <comment>)
+	THERT causes Micro-Planner to break and print its comment.
+The state of the world can be explored by evaling any s-expression.
+Planner expressions can be thvaled by explicitly calling thval.  For
+example,
+	(THVAL (THASSERT HUMAN TURING)  NIL)
+would add this assertion to the data base if it had not been
+previously asserted.  Note that explicit thvals should be done
+carefully as they can change the state of the world.
+	When ready to leave the breakpoint,   ($P <s-exp>) causes
+THERT to return the lisp value of the s-exp, WHERE "$" = ALT-MODE.
+Note that this will cause failure if the expression evals to NIL. $P
+is equivalent to ($P T) and is the standard way to proceed from the
+breakpoint.
+
+*) (THBKPT <comment>)
+	THBKPT has no effect unless traced. If it is, its comment is
+printed.  If the trace's break predicate is true as well, e. g. 
+	(THTRACE (THBKPT T T)), 
+
+
+
+
+
+
+						   PLNR PRIMITIVES 5
+
+
+
+then THBKPT is breaks in a similar fashion to THERT. (see ***).
+However, THBKPT is more powerful than THERT as it also breaks upon
+failure backing up to it.  It is thus more useful than thert to
+debug planner programs. 
+
+*) (THCONSE <thm-name> <list-of-variables> <pattern> <body>)
+	A planner consequent theorem can be defined and asserted by
+the function THCONSE.  For example,  a consequent theorem named THM1
+can be defined and asserted as follows: 
+
+	(THCONSE THM1 (X) (FALLIBLE $?X) (THGOAL (HUMAN $?X)))
+
+This is equivalent to:  
+
+	(THPUTPROP
+		'THM1
+		'(THCONSE (X) (FALLIBLE $?X) (THGOAL (HUMAN $?X)))
+		'THEOREM)
+	(THASSERT THM1) 
+
+	The theorem name is optional.  If it is not given, a unique
+name is generated by the system.  Note that this feature should not
+be used if one later wants to erase the theorem.
+	Asserting the theorem can be avoided by placing thnoassert
+immediately after the theorem name  For example, THM1 is defined but
+not asserted by:
+
+ (THCONSE THM1 THNOASSERT (X) (FALLIBLE $?X) (THGOAL (HUMAN $?X)))
+
+
+*)  (THANTE <thm-name> <list-of-variables> <pattern> <body>)
+	THANTE works in a similar fashion to THCONSE to define and
+(optionally) assert antecedent theorems.
+
+*)  (THERASING <thm-name> <list-of-variables> <pattern> <body>) 
+	THERASING works in a similar fashion to THCONSE to define
+and (optionally) assert antecedent theorems.
+
+*) THPSEUDO
+	"(THPSEUDO)" as the first recommendation to an assertion
+enables one to activate a pattern's antecedent theorems, without
+actually asserting the pattern.  For example, to activate the
+antecedent theorems which match the pattern "(HUMAN TURING)" without
+actually asserting it is accomplished by:
+
+	(THASSERT (HUMAN TURING) (THPSEUDO) $T) 
+
+In many cases this can be done without using THPSEUDO by first
+asserting the pattern with the appropriate theorem reccomendations
+and then erasing the pattern.  For instance, one could accomplish
+
+
+
+
+
+
+						   PLNR PRIMITIVES 6
+
+
+
+the same effect as using THPSEUDO  in the above example by the
+following:
+
+	(THASSERT (HUMAN TURING) $T)
+	(THERASE (HUMAN TURING))
+
+However, THPSEUDO becomes necessary when some of the variables in
+the pattern are unassigned, thus preventing it from being asserted.
+	THPSEUDO performs in the same fashion for activating a
+pattern's erasing theorems  without actually erasing the pattern.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

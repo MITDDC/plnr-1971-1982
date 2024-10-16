@@ -1,0 +1,45 @@
+{
+    "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+    "type": "SoftwareSourceCode",
+    "applicationCategory": "Programming Language",
+    "author": [
+        {
+            "id": "_:author_1",
+            "type": "Person",
+            "affiliation": {
+                "type": "Organization",
+                "name": "Massachusetts Institute of Technology"
+            },
+            "familyName": "Sussman",
+            "givenName": "Gerald"
+        },
+        {
+            "id": "_:author_2",
+            "type": "Person",
+            "affiliation": {
+                "type": "Organization",
+                "name": "Massachusetts Institute of Technology"
+            },
+            "familyName": "Charniak",
+            "givenName": "Eugene"
+        },
+        {
+            "id": "_:author_3",
+            "type": "Person",
+            "affiliation": {
+                "type": "Organization",
+                "name": "Massachusetts Institute of Technology"
+            },
+            "familyName": "Winograd",
+            "givenName": "Terry"
+        }
+    ],
+    "dateCreated": "1971-08-26",
+    "description": "A set of files from 1971-1982 that contain the source and related files for Micro-Planner, an implementation of part of the Planner programming language.",
+    "isPartOf": "https://archivesspace.mit.edu/repositories/2/resources/1265",
+    "license": "https://spdx.org/licenses/MIT",
+    "name": "Micro-Planner",
+    "operatingSystem": "ITS",
+    "programmingLanguage": "Micro-Planner",
+    "developmentStatus": "unsupported"
+}
