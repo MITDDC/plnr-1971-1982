@@ -19,7 +19,7 @@ A file tree listing the files in the [`planr`](../main/planr) directory showing 
 A list of all the tape images and their paths in the ToTS collection that these files came from.
 
 ## Preferred Citation
-[filename], Micro-Planner files, 1971-1982, Massachusetts Institute of Technology, Tapes of Tech Square (ToTS) collection, MC-0741. Massachusetts Institute of Technology, Department of Distinctive Collections, Cambridge, Massachusetts.
+[filename], Micro-Planner files, 1971-1982, Massachusetts Institute of Technology, Tapes of Tech Square (ToTS) collection, MC-0741. Massachusetts Institute of Technology, Department of Distinctive Collections, Cambridge, Massachusetts. [swh:1:dir:0d1178b0c370df5b1ce6f06fc33481064fbb0f37](https://archive.softwareheritage.org/swh:1:dir:0d1178b0c370df5b1ce6f06fc33481064fbb0f37)
 ## Rights
 To the extent that MIT holds rights in these files, they are released under the terms of the [MIT License](https://opensource.org/licenses/MIT). See the `LICENSE` file for more information. Any questions about permissions should be directed to [permissions-lib@mit.edu](mailto:permissions-lib@mit.edu)
 ## Acknowledgements
